@@ -6,14 +6,17 @@
 ## Types of Machine learning
 ___
 - ML
-    - [supervised](##supervised)
+    - [Supervised](##supervised)
     - [Unsupervised](#unsupervised)
     - [Semisupervised](#semi)
     - [Reinforcement](#reinforcement)
+    - [Introduction](#Introduction-To-machine-learnin)
 
 
 
-### **Supervised Learning**
+
+
+## Supervised Learning
 ---
 
 ![](1.png)
@@ -29,6 +32,18 @@ ___
     - Neural networks
 
 
+
+# Introduction-To-machine-learning
+
+### How mahcine learning work ?
+
+![](ml1.png)
+
+
     
+
+### Python libraries for mahcine learing
+
+![](ml2.png)
 
 

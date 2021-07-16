@@ -1,0 +1,761 @@
+
+<!-- 
+   Elapsed time: 0 seconds.
+-->
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="_ctl0__ctl0_Head1"><script>dataLayer = [{'siteName':'stats','pageCategory':'statistics','siteEnvironment':'live','dataSetCode':'BLI','pageLanguage':'en','pageCurrentPath':'/Dataset/BLI/Public/86595','pageTopic':'socialProtectionandWell-being','pageCommonTopic':'society'}];</script><!-- Google Tag Manager -->
+        <script>
+          (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+          })(window,document,'script','dataLayer','GTM-P5JSM4P');
+        </script>
+        <!-- End Google Tag Manager -->
+      <title>
+	Better Life Index
+</title>
+    <script src="js/jquery/jquery-1.6.2.min.js" type="text/javascript"></script>
+    <script src="js/jqueryui/jquery-ui-1.8.14.min.js" type="text/javascript"></script>
+    <script src="js/jqueryui/jquery.ui.widget.js" type="text/javascript"></script>
+    <script src="js/jqueryui/jquery.ui.menu.js" type="text/javascript"></script>
+    <script src="js/jqueryui/jquery.ui.menubar.js" type="text/javascript"></script>
+    <script src="js/jqueryplugin/jquery.ellipsis.min.js" type="text/javascript"></script>
+    
+    <script type="text/javascript">
+        function trackExitAndRedir(url, label) {
+            try {
+                ga('send', 'pageview', '/Other/Exit/' + label);
+                ga('send', 'event', 'Exit', 'Click on external link', url, setTimeout(function () { document.location.href = url }, 300));
+            }
+            catch (ex) { }
+        }
+
+        function PanelSearch() {
+            var txtsearchvalue = $('.txtSearch').attr("value").trim();
+            if (txtsearchvalue.length <= 150) {
+                if (dotStatSearchProviderType == 'IndependentExternalSearchProvider') {
+                    var searchURL = dotStatSearchURL.replace(/\{0}/g, txtsearchvalue);
+                    window.open(searchURL);
+                }
+                else {
+                    subSessionId = $('input[id*="TBSubSessionId"]').val();
+                    CallServer("Search&" + txtsearchvalue + "&" + subSessionId);
+                }
+            }
+
+        
+            dataLayer.push({ 'customCategory': 'navigation', 'customAction': 'internalSearchTerm', 'customLabel': txtsearchvalue, 'event': 'customEvent' });
+        
+        }
+
+        function HandleKeyPressSearch(e) {
+            if (window.event && window.event.keyCode == 13) {
+                PanelSearch();
+                return false;
+            }
+            else if (e.keyCode == 13) {
+                PanelSearch();
+                return false;
+            }
+        }
+    </script>
+    <style id="_ctl0__ctl0_head_IndexSpecificCss" type="text/css">
+        body
+        {
+            overflow: hidden;
+        }
+    </style>
+    
+
+<script language="text/javascript" type="text/javascript">
+    var modalpivotdimensionstitle = "Customise layout";var modaloptionstitle = "Customise table options";var modalexporttitle = "Export";var modalsavetitle = "Save";var modalreadymadefilestitle = "Ready-made files";var findinbrowsetheme = "Find in Themes";var gettingstartedtitle = "Getting Started";var modalEditXmlDefinition = "Edit XML Definition";var modalSurvey = "Survey";var exceptionOccurredInExport = "Exception occurred in Export.";var urlmetadata = "OECDStat_Metadata/ShowMetadata.ashx";
+</script><link rel="shortcut icon" href="Content/themes/OECD/images/favicon.ico" type="image/x-icon" /><link rel="stylesheet" type="text/css" href="Content/themes/OECD/styles/dialog.css" /><link rel="stylesheet" type="text/css" href="Content/themes/OECD/styles/layout.css" /><link rel="stylesheet" type="text/css" href="Content/themes/OECD/styles/metadata.css" /><link rel="stylesheet" type="text/css" href="Content/themes/OECD/styles/pages.css" /><link rel="stylesheet" type="text/css" href="Content/themes/OECD/styles/treeview.css" /><link rel="stylesheet" type="text/css" href="Content/themes/OECD/styles/WebTableStyles.css" /><link rel="stylesheet" type="text/css" href="Content/themes/OECD/styles/jqueryui/1-jquery-ui-1.8.14.custom.css" /><link rel="stylesheet" type="text/css" href="Content/themes/OECD/styles/jqueryui/2-jquery.ui.menu.css" /><link rel="stylesheet" type="text/css" href="Content/themes/OECD/styles/jqueryui/3-jquery.ui.menubar.css" /><link rel="stylesheet" type="text/css" href="Content/themes/OECD/styles/jqueryui/4-jquery.ui.selectmenu.css" /><meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, shrink-to-fit=yes"><meta name="description" content="OECD.Stat enables users to search for and extract data from across OECD’s many databases."><meta name="keywords" content="OECD, statistics, data, download, access"><meta name="author" content="OECD"><meta name="copyright" content="© OECD"><meta name="distribution" content="Global"></head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P5JSM4P"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+    <form name="aspnetForm" method="post" action="./index.aspx?DataSetCode=BLI" id="aspnetForm">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="0MBasBmEZXC6nphMYq4MB9aD79XA7gjpq63JA8yLPf3npWS8wbMNKSU1ocQfupgmZVKgV+J2o9snJlRrDFvkNmpTJ1A=" />
+
+
+<script type="text/javascript">
+<!--
+ function CallServer(arg,context) { 
+                    centerwidth = 0;
+                    centerwidth = getCenterWidth();
+                    $('#divcontent').hide();
+                    $('#contentLoading').width(centerwidth);        
+                    $('#contentLoading').show();WebForm_DoCallback('__Page',arg,ReceiveServerData,context,OnCallbackError,false); }// -->
+</script>
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="90059987" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="os+edYxWMOcjextwlc1ZaKKDahhXyEwyBaZ6XYylAFY/9cRelf2kAhhoGjGXhA3Y0SZLVD8JnnHwaSbJefQi4uT6gr4ODfywDzgW9BLFHX0aNAMmreZXDcjGlzaitZ8TskNMB/UFsGTQijxL2cFE0lPMDJ1yQAMQk3p6MO/WEkb5wp+Hyg215Ha3DVgxbkgf+ech4VM8HbMLALYUoS7tpu+bCZoJVNZMfzdZcte1oN2vopdXBJDklpX+UOxnD77d2SXv+KfH6EDLQKS5GNPtOBhehlDUFShuY6rz7zqBZEUWNjF2smKYQlJpetzyEWULhtYOSv+HYxeWGF27n2ryUY+hMn+HEB+r4rW5RyC/pTJaC5Pw2Odfn1BcsjuGZ/8HHM/9AlTwIYY1rgarOWJUFnWtGr4GRoBLhmaxRDoxqx0IvgfL/KEEB8QkgHK3os1C9ZGgbLcKOowdwl8ZHwIJEUdDmNt3Ix06EQrZ+n+10lHP9MKAbjvYS4oMh6kvdxNKMTflKpQUEZDKwsOfIgOkE0oyQMC4JFObHxjHE9nf2iM4mkkiq3SR/PVtDUwV8zG+vjav24rvI3A3NpU9D1A2bi+MC3zWmAHzQdzNr+IvvHKcqd3m//QGhDv9yaLJ6izbCT7JApPk+hbH1cvpoof0sLHcgEOG5OhxoEVGK5ijj8kMVdonmEI8QG5supvaC0lCM42ZQ31eKIB/HcV1YYX0ckpMcQkRHYmmL5OKTOWA1ICMLt9107AbVma/YUC0KYTZkTbuPKsG+JgXYKuMq0zQ8qJVIycwLpzGy7NsEOzteZ+Uap1JBmssL8jtergc4R2y6vxu5ERHW3303hFetcXhnqAlF4D5XUeRlLqmQhJwEan3eW7mP01FV+9E6rbIFqkONuWsqg==" />
+        <script type='text/javascript'>var currentlanguage = 'en';var organization = 'OECD';var bquerymanagertree = true;var dotStatSearchURL = 'https://stats-2.oecd.org/OECDStatWCF_ExaleadSearchClient/Search.svc';var dotStatSearchProviderType = 'DotStatGenericExternalSearchAPI';</Script>
+        <div id="container">
+            
+    
+    
+
+            
+            <div id="_ctl0__ctl0_divHeader" class="header">
+                <div id="wboslogo" class="left">
+                    <a href="Index.aspx" id="_ctl0__ctl0_hrefOverLogo">
+                        
+                    </a>
+                    <img id="_ctl0__ctl0_ImageMapLogo" src="Content/themes/OECD/images/logo/externalLogo-en.gif" align="absmiddle" border="0" usemap="#ImageMap_ctl0__ctl0_ImageMapLogo" /><map name="ImageMap_ctl0__ctl0_ImageMapLogo" id="ImageMap_ctl0__ctl0_ImageMapLogo">
+	<area shape="rect" coords="626,53,186,67" href="" target="_parent" title="" alt="" /><area shape="rect" coords="0,0,626,67" href="javascript:trackExitAndRedir(&#39;http://www.oecd.org&#39;, &#39;OECD Web Site&#39;);" target="_parent" title="" alt="" />
+</map>
+                </div>
+                <div id="topright">
+                    
+                </div>
+                
+    <div id="topright">
+        <div id="_ctl0__ctl0_cphHeader_divTopLink" class="toplink">
+            <a href="javascript:login();" id="_ctl0__ctl0_cphHeader_LoginTopLink" title="">Click here to Login | </a>            
+            <a id="_ctl0__ctl0_cphHeader_ContactTopLink" title="Contact us" onclick="javascript:OpenDialog(&#39;FAQAndContact.aspx?&#39;, &#39;Contact us&#39;);">
+                Contact us&nbsp;|&nbsp;</a>
+            <a href="/Content/themes/OECD/static/help/WBOS User Guide (EN).PDF" id="_ctl0__ctl0_cphHeader_UserGuideTopLink" target="_blank" rel="noopener noreferrer" title="User Guide">
+                User Guide&nbsp;|&nbsp;</a>
+            <a id="_ctl0__ctl0_cphHeader_HomeTopLink" onclick="openHome();" title="Home">
+                Home</a>
+        </div>
+        <div id="_ctl0__ctl0_cphHeader_languageSelector" class="languagelink"><span class="currentlanguagelink">English</span> | <a href="javascript:setLanguage( &#39;fr&#39; );">Français</a></div>
+        <div id="_ctl0__ctl0_cphHeader_Search">
+            <div id="topsearch">                
+				Search&nbsp;
+                <input name="_ctl0:_ctl0:cphHeader:txtSearch" type="text" maxlength="150" id="_ctl0__ctl0_cphHeader_txtSearch" class="txtSearch" onkeypress="return HandleKeyPressSearch(event);" />
+                <a href="javascript:PanelSearch();">
+                    <img id="_ctl0__ctl0_cphHeader_imgSearch" alt="search" src="Content/themes/OECD/images/search.gif" border="0" height="20" width="20" style="vertical-align: middle; padding:0; margin:0;" />
+				</a>
+                
+                <br />
+                <div id="_ctl0__ctl0_cphHeader_divGettingStarted" style="margin-top:2px;">
+                    <a href="#" onclick="openGettingStarted();" id="yellowlitle">
+                        Getting Started
+                    </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </div>
+            </div>
+        </div>
+    </div>
+
+            </div>
+            <div id="_ctl0__ctl0_divTopLine" class="topline"></div>
+            <div id="content">
+                
+    
+    <input type="hidden" name="_ctl0:_ctl0:cphCentre:ContentPlaceHolder1:TBSubSessionId" id="_ctl0__ctl0_cphCentre_ContentPlaceHolder1_TBSubSessionId" value="70bcb24a-c250-4c90-b537-a7c13f74fcc4" />
+    
+    <div>
+        <div id="divnavigation" class="left">
+            
+            <div id="mergedqueries" style="display: none">
+                <h4>
+                    <span id="_ctl0__ctl0_cphCentre_ContentPlaceHolder1_MDQLabelTitle">Combine Queries</span></h4>
+                
+
+<div id="MDQContent" class="collapsible">
+    <div id="tdQueryList">
+        Data Basket Empty
+    </div>
+    <div id="MDQActions">
+        <input name="_ctl0:_ctl0:cphCentre:ContentPlaceHolder1:_ctl1:btnOpenAsCurrent" type="button" id="_ctl0__ctl0_cphCentre_ContentPlaceHolder1__ctl1_btnOpenAsCurrent" class="MDQInputButton1 mqbtndisabled" onclick="javascript:SetAsCurrentQuery();" disabled="disabled" value="Edit" />
+        <input name="_ctl0:_ctl0:cphCentre:ContentPlaceHolder1:_ctl1:btnRemove" type="button" id="_ctl0__ctl0_cphCentre_ContentPlaceHolder1__ctl1_btnRemove" class="MDQInputButton1 mqbtndisabled" onclick="javascript:RemoveFromJTD();" disabled="disabled" value="Remove" />
+        
+        <input name="_ctl0:_ctl0:cphCentre:ContentPlaceHolder1:_ctl1:btnViewData" type="button" id="_ctl0__ctl0_cphCentre_ContentPlaceHolder1__ctl1_btnViewData" class="MDQInputButton2 mqbtndisabled" onclick="javascript:CallCallbackJTD();" value="View" />
+    </div>
+
+    <script language="javascript" type="text/javascript">
+    function JQueryHoverAndClick()
+	{
+        // JQuery Javascript for hover and click
+
+        $(".JTDDataset").hover(
+              function () {
+                  $(this).addClass("JTDDatasethover");
+              },
+              function () {
+                  $(this).removeClass("JTDDatasethover");
+              }
+        );
+
+        $(".JTDDataset").click(function(){
+	        $(".JTDDatasetclick").removeClass("JTDDatasetclick");
+	        $(this).addClass("JTDDatasetclick");
+            gSelectedDataset = new Dataset($(this).attr("DSCode"), null, $(this).attr("Order"));
+            $(".MDQInputButton1").removeAttr("disabled");
+            $(".MDQInputButton1").removeClass("mqbtndisabled").addClass("mqbtnenabled");
+        });
+
+        // END JQuery Javascript for hover and click
+	}
+	
+    function OpenMQ()
+    {
+        if ($("#MDQToogleExpand").hasClass("NavHeaderExpand"))
+        {
+        $("#MDQContent").slideToggle("fast");
+        $("#MDQToogleExpand").removeClass("NavHeaderExpand").addClass("NavHeaderCollapse");
+        }
+	}
+	
+        $("#MDQActions").css("display","none");
+    </script>
+
+</div>
+
+            </div>
+            
+            <div id="_ctl0__ctl0_cphCentre_ContentPlaceHolder1_TabbedPanel">
+	
+                <div id="browsePanel">
+                    <ul id="tabs">
+                        <li><a href="#bThemes" class="leftmenu">
+                            <span id="_ctl0__ctl0_cphCentre_ContentPlaceHolder1_BrowseThemesLabelTitle">Data by theme</span></a></li>
+                        <li><a href="#bPopular" class="leftmenu">
+                            <span id="_ctl0__ctl0_cphCentre_ContentPlaceHolder1_BrowseQueriesLabelTitle">Popular queries</span></a></li>
+                    </ul>
+                    <div id="bThemes" class="navPane">
+                        
+<div id="BrowseThemesContent" class="collapsible">
+    <div id="_ctl0__ctl0_cphCentre_ContentPlaceHolder1__ctl3_divThemesFilter">
+        <input name="_ctl0:_ctl0:cphCentre:ContentPlaceHolder1:_ctl3:txtSearchInTheme" type="text" maxlength="160" id="_ctl0__ctl0_cphCentre_ContentPlaceHolder1__ctl3_txtSearchInTheme" class="txtSearchInTheme" onkeypress="return handleKeyPressSearchInTheme(event);" />
+        
+        <img id="_ctl0__ctl0_cphCentre_ContentPlaceHolder1__ctl3_Image2" onclick="javascript:searchInTheme();" src="Content/themes/OECD/images/search.gif" border="0" />
+        <a onclick="javascript:cancelSearchInTheme();">&nbsp;&nbsp;Reset
+        </a>
+        <br/>
+        <script type="text/javascript">
+            $(function () {
+                populateSearch('.txtSearchInTheme', findinbrowsetheme);
+                if ($.browser.msie && $.browser.version < 9) $('select.wide').bind('focus mouseover', function () { $(this).addClass('expand').removeClass('clicked'); }).bind('click', function () { $(this).toggleClass('clicked'); }).bind('mouseout', function () { if (!$(this).hasClass('clicked')) { $(this).removeClass('expand'); } }).bind('blur', function () { $(this).removeClass('expand clicked'); });
+            });
+
+        </script>
+        <select name="_ctl0:_ctl0:cphCentre:ContentPlaceHolder1:_ctl3:ddlThemesFilter" id="_ctl0__ctl0_cphCentre_ContentPlaceHolder1__ctl3_ddlThemesFilter" class="wide" onchange="changeTheme();">
+		<option value="-100">Choose Theme</option>
+		<option value="-200">All Themes</option>
+		<option value="0">General Statistics</option>
+		<option value="1">Agriculture and Fisheries</option>
+		<option value="2">Demography and Population</option>
+		<option value="3">Development</option>
+		<option value="4">Economic Projections</option>
+		<option value="5">Education and Training</option>
+		<option value="7">Environment</option>
+		<option value="8">Finance</option>
+		<option value="154">Globalisation</option>
+		<option value="9">Health</option>
+		<option value="10">Industry and Services</option>
+		<option value="11">Information and Communication Technology</option>
+		<option value="12">International Trade and Balance of Payments</option>
+		<option value="13">Labour</option>
+		<option value="15">National Accounts</option>
+		<option value="155">Monthly Economic Indicators</option>
+		<option value="17">Productivity</option>
+		<option value="16">Prices and Purchasing Power Parities</option>
+		<option value="18">Public Sector, Taxation and Market Regulation</option>
+		<option value="23">Regions and Cities</option>
+		<option value="19">Science, Technology and Patents</option>
+		<option selected="selected" value="21" style="background-color: #dfeaf5;font-weight: bold;">Social Protection and Well-being</option>
+		<option value="24">Transport</option>
+
+	</select>
+        <div id="loading">
+            <img src="images/fv/spinner.gif" alt="Loading" style="width: 16; height: 16;" /></div>
+    </div>
+    <div id="browsethemes">
+        
+        <ul class="treeview"><li class="t closed"><span>Social Protection and Well-being</span><ul><li class="t closed"><span>How's Life - Well-being</span><ul><li class="t closed"><span>How's Life? Well-Being</span><ul class="group"><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=HSL"></a><a href="Index.aspx?DataSetCode=HSL"  class="ds" dscode="HSL" qid="96535">Current Well-being (average and deprivation)</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=HSL"></a><a href="#" class="q"  dscode="HSL"  qid="96538">Current Well-being (vertical inequality)</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=HSL"></a><a href="#" class="q"  dscode="HSL"  qid="96539">Current Well-being (horizontal inequality)-by sex</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=HSL"></a><a href="#" class="q"  dscode="HSL"  qid="96645">Current Well-being (horizontal inequality)-by age</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=HSL"></a><a href="#" class="q"  dscode="HSL"  qid="96646">Current Well-being (horizontal inequality)-by education</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=HSL"></a><a href="#" class="q"  dscode="HSL"  qid="96541">Resources for Future Well-being</a><div style="clear: both;"></div></li></ul></li></ul></li><li class="t closed"><span>Social Protection</span><ul><li class="t closed"><span>Social Benefits Recipients</span><ul><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=SOCR"></a><a href="Index.aspx?DataSetCode=SOCR"  class="ds" dscode="SOCR" qid="77748">SOCR - Detailed data</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=SOCR_REF"></a><a href="Index.aspx?DataSetCode=SOCR_REF"  class="ds" dscode="SOCR_REF" qid="77750">SOCR - Reference series</a><div style="clear: both;"></div></li></ul></li><li class="t closed"><span>Social Expenditure - Aggregated data</span><ul class="group"><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=SOCX_AGG"></a><a href="Index.aspx?DataSetCode=SOCX_AGG"  class="ds" dscode="SOCX_AGG" qid="4549">Social Expenditure (SOCX)</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=SOCX_AGG"></a><a href="#" class="q"  dscode="SOCX_AGG"  qid="30197">Public expenditure on old-age and survivors cash benefits, in % GDP</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=SOCX_AGG"></a><a href="#" class="q"  dscode="SOCX_AGG"  qid="33415">Public expenditure on disability and sickness cash benefits, in % GDP</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=SOCX_AGG"></a><a href="#" class="q"  dscode="SOCX_AGG"  qid="33817">Public expenditure on family by type of expenditure (cash and in kind), in % GDP</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=SOCX_AGG"></a><a href="#" class="q"  dscode="SOCX_AGG"  qid="26920">Public and Private Social Expenditure by country</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=SOCX_AGG"></a><a href="#" class="q"  dscode="SOCX_AGG"  qid="50787">Net Total Social Expenditure, in % GDP</a><div style="clear: both;"></div></li></ul></li><li class="t closed"><span>Social Expenditure - Detailed data</span><ul class="group"><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=SOCX_DET"></a><a href="Index.aspx?DataSetCode=SOCX_DET"  class="ds" dscode="SOCX_DET" qid="4555">Social Expenditure - Detailed data</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=SOCX_DET"></a><a href="#" class="q"  dscode="SOCX_DET"  qid="394">Australia</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=SOCX_DET"></a><a href="#" class="q"  dscode="SOCX_DET"  qid="395">Austria</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=SOCX_DET"></a><a href="#" class="q"  dscode="SOCX_DET"  qid="396">Belgium</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=SOCX_DET"></a><a href="#" class="q"  dscode="SOCX_DET"  qid="397">Canada</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=SOCX_DET"></a><a href="#" class="q"  dscode="SOCX_DET"  qid="26304">Chile</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=SOCX_DET"></a><a href="#" class="q"  dscode="SOCX_DET"  qid="103481">Colombia</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=SOCX_DET"></a><a href="#" class="q"  dscode="SOCX_DET"  qid="103482">Costa Rica</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=SOCX_DET"></a><a href="#" class="q"  dscode="SOCX_DET"  qid="398">Czech Republic</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=SOCX_DET"></a><a href="#" class="q"  dscode="SOCX_DET"  qid="399">Denmark</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=SOCX_DET"></a><a href="#" class="q"  dscode="SOCX_DET"  qid="26305">Estonia</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=SOCX_DET"></a><a href="#" class="q"  dscode="SOCX_DET"  qid="400">Finland</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=SOCX_DET"></a><a href="#" class="q"  dscode="SOCX_DET"  qid="103479">France</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=SOCX_DET"></a><a href="#" class="q"  dscode="SOCX_DET"  qid="402">Germany</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=SOCX_DET"></a><a href="#" class="q"  dscode="SOCX_DET"  qid="403">Greece</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=SOCX_DET"></a><a href="#" class="q"  dscode="SOCX_DET"  qid="404">Hungary</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=SOCX_DET"></a><a href="#" class="q"  dscode="SOCX_DET"  qid="405">Iceland</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=SOCX_DET"></a><a href="#" class="q"  dscode="SOCX_DET"  qid="406">Ireland</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=SOCX_DET"></a><a href="#" class="q"  dscode="SOCX_DET"  qid="26309">Israel</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=SOCX_DET"></a><a href="#" class="q"  dscode="SOCX_DET"  qid="407">Italy</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=SOCX_DET"></a><a href="#" class="q"  dscode="SOCX_DET"  qid="408">Japan</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=SOCX_DET"></a><a href="#" class="q"  dscode="SOCX_DET"  qid="409">Korea</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=SOCX_DET"></a><a href="#" class="q"  dscode="SOCX_DET"  qid="74617">Latvia</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=SOCX_DET"></a><a href="#" class="q"  dscode="SOCX_DET"  qid="86610">Lithuania</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=SOCX_DET"></a><a href="#" class="q"  dscode="SOCX_DET"  qid="410">Luxembourg</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=SOCX_DET"></a><a href="#" class="q"  dscode="SOCX_DET"  qid="411">Mexico</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=SOCX_DET"></a><a href="#" class="q"  dscode="SOCX_DET"  qid="412">Netherlands</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=SOCX_DET"></a><a href="#" class="q"  dscode="SOCX_DET"  qid="413">New Zealand</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=SOCX_DET"></a><a href="#" class="q"  dscode="SOCX_DET"  qid="414">Norway</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=SOCX_DET"></a><a href="#" class="q"  dscode="SOCX_DET"  qid="415">Poland</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=SOCX_DET"></a><a href="#" class="q"  dscode="SOCX_DET"  qid="416">Portugal</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=SOCX_DET"></a><a href="#" class="q"  dscode="SOCX_DET"  qid="417">Slovak Republic</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=SOCX_DET"></a><a href="#" class="q"  dscode="SOCX_DET"  qid="26310">Slovenia</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=SOCX_DET"></a><a href="#" class="q"  dscode="SOCX_DET"  qid="418">Spain</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=SOCX_DET"></a><a href="#" class="q"  dscode="SOCX_DET"  qid="419">Sweden</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=SOCX_DET"></a><a href="#" class="q"  dscode="SOCX_DET"  qid="420">Switzerland</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=SOCX_DET"></a><a href="#" class="q"  dscode="SOCX_DET"  qid="421">Turkey</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=SOCX_DET"></a><a href="#" class="q"  dscode="SOCX_DET"  qid="422">United Kingdom</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=SOCX_DET"></a><a href="#" class="q"  dscode="SOCX_DET"  qid="423">United States</a><div style="clear: both;"></div></li></ul></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=SOCX_REF"></a><a href="Index.aspx?DataSetCode=SOCX_REF"  class="ds" dscode="SOCX_REF" qid="4545">Social Expenditure - Reference Series</a><div style="clear: both;"></div></li><li class="t closed"><span>Pensions at a Glance</span><ul class="group"><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=PAG"></a><a href="Index.aspx?DataSetCode=PAG"  class="ds" dscode="PAG" qid="69218">Pensions at a Glance 2019</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=PAG"></a><a href="#" class="q"  dscode="PAG"  qid="69413">Design of pension systems</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=PAG"></a><a href="#" class="q"  dscode="PAG"  qid="69535">Pension replacement rates</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=PAG"></a><a href="#" class="q"  dscode="PAG"  qid="69536">Pension wealth</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=PAG"></a><a href="#" class="q"  dscode="PAG"  qid="69412"> Demographic and economic context</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=PAG"></a><a href="#" class="q"  dscode="PAG"  qid="69414">Income and poverty of older people</a><div style="clear: both;"></div></li></ul></li><li class="t closed"><span>ELS Pensions</span><ul class="group"><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=ELSPENSIONS"></a><a href="Index.aspx?DataSetCode=ELSPENSIONS"  class="ds" dscode="ELSPENSIONS" qid="19817">Pensions at a Glance 2013</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=ELSPENSIONS"></a><a href="#" class="q"  dscode="ELSPENSIONS"  qid="46178">Pension Replacement Rates (Gross & Net)</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=ELSPENSIONS"></a><a href="#" class="q"  dscode="ELSPENSIONS"  qid="46185">Pension wealth (Gross & Net)</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=ELSPENSIONS"></a><a href="#" class="q"  dscode="ELSPENSIONS"  qid="20107">Australia</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=ELSPENSIONS"></a><a href="#" class="q"  dscode="ELSPENSIONS"  qid="20108">Austria</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=ELSPENSIONS"></a><a href="#" class="q"  dscode="ELSPENSIONS"  qid="20119">Belgium</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=ELSPENSIONS"></a><a href="#" class="q"  dscode="ELSPENSIONS"  qid="20120">Canada</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=ELSPENSIONS"></a><a href="#" class="q"  dscode="ELSPENSIONS"  qid="30198">Chile</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=ELSPENSIONS"></a><a href="#" class="q"  dscode="ELSPENSIONS"  qid="20121">Czech Republic</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=ELSPENSIONS"></a><a href="#" class="q"  dscode="ELSPENSIONS"  qid="20122">Denmark</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=ELSPENSIONS"></a><a href="#" class="q"  dscode="ELSPENSIONS"  qid="30199">Estonia</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=ELSPENSIONS"></a><a href="#" class="q"  dscode="ELSPENSIONS"  qid="20123">Finland</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=ELSPENSIONS"></a><a href="#" class="q"  dscode="ELSPENSIONS"  qid="20124">France</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=ELSPENSIONS"></a><a href="#" class="q"  dscode="ELSPENSIONS"  qid="20125">Germany</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=ELSPENSIONS"></a><a href="#" class="q"  dscode="ELSPENSIONS"  qid="20126">Greece</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=ELSPENSIONS"></a><a href="#" class="q"  dscode="ELSPENSIONS"  qid="20127">Hungary</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=ELSPENSIONS"></a><a href="#" class="q"  dscode="ELSPENSIONS"  qid="20128">Iceland</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=ELSPENSIONS"></a><a href="#" class="q"  dscode="ELSPENSIONS"  qid="20129">Ireland</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=ELSPENSIONS"></a><a href="#" class="q"  dscode="ELSPENSIONS"  qid="30200">Israel</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=ELSPENSIONS"></a><a href="#" class="q"  dscode="ELSPENSIONS"  qid="20130">Italy</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=ELSPENSIONS"></a><a href="#" class="q"  dscode="ELSPENSIONS"  qid="20131">Japan</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=ELSPENSIONS"></a><a href="#" class="q"  dscode="ELSPENSIONS"  qid="20132">Korea</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=ELSPENSIONS"></a><a href="#" class="q"  dscode="ELSPENSIONS"  qid="20133">Luxembourg</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=ELSPENSIONS"></a><a href="#" class="q"  dscode="ELSPENSIONS"  qid="20134">Mexico</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=ELSPENSIONS"></a><a href="#" class="q"  dscode="ELSPENSIONS"  qid="20135">Netherlands</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=ELSPENSIONS"></a><a href="#" class="q"  dscode="ELSPENSIONS"  qid="20136">New Zealand</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=ELSPENSIONS"></a><a href="#" class="q"  dscode="ELSPENSIONS"  qid="20137">Norway</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=ELSPENSIONS"></a><a href="#" class="q"  dscode="ELSPENSIONS"  qid="20138">Poland</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=ELSPENSIONS"></a><a href="#" class="q"  dscode="ELSPENSIONS"  qid="20139">Portugal</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=ELSPENSIONS"></a><a href="#" class="q"  dscode="ELSPENSIONS"  qid="20140">Slovak Republic</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=ELSPENSIONS"></a><a href="#" class="q"  dscode="ELSPENSIONS"  qid="30201">Slovenia</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=ELSPENSIONS"></a><a href="#" class="q"  dscode="ELSPENSIONS"  qid="20141">Spain</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=ELSPENSIONS"></a><a href="#" class="q"  dscode="ELSPENSIONS"  qid="20142">Sweden</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=ELSPENSIONS"></a><a href="#" class="q"  dscode="ELSPENSIONS"  qid="20143">Switzerland</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=ELSPENSIONS"></a><a href="#" class="q"  dscode="ELSPENSIONS"  qid="20144">Turkey</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=ELSPENSIONS"></a><a href="#" class="q"  dscode="ELSPENSIONS"  qid="20145">United Kingdom</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=ELSPENSIONS"></a><a href="#" class="q"  dscode="ELSPENSIONS"  qid="20146">United States</a><div style="clear: both;"></div></li></ul></li></ul></li><li class="t closed"><span>Income distribution and poverty</span><ul><li class="t closed"><span>Income Distribution Database</span><ul class="group"><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=IDD"></a><a href="Index.aspx?DataSetCode=IDD"  class="ds" dscode="IDD" qid="66596">Income Distribution Database</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=IDD"></a><a href="#" class="q"  dscode="IDD"  qid="66670">by country</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=IDD"></a><a href="#" class="q"  dscode="IDD"  qid="66599">by country - INCOME (current prices)</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=IDD"></a><a href="#" class="q"  dscode="IDD"  qid="66597">by country - INEQUALITY</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=IDD"></a><a href="#" class="q"  dscode="IDD"  qid="66598">by country - POVERTY</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=IDD"></a><a href="#" class="q"  dscode="IDD"  qid="66600">by measure</a><div style="clear: both;"></div></li></ul></li></ul></li><li class="t closed"><span>Wealth distribution</span><ul><li class="t closed"><span>Wealth</span><ul class="group"><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=WEALTH"></a><a href="Index.aspx?DataSetCode=WEALTH"  class="ds" dscode="WEALTH" qid="81610">Wealth</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=WEALTH"></a><a href="#" class="q"  dscode="WEALTH"  qid="81611">By country</a><div style="clear: both;"></div></li></ul></li></ul></li><li class="t closed"><span>Benefits, Taxes and Wages</span><ul><li class="t closed"><span>Replacement rates in unemployment </span><ul><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=NRR"></a><a href="Index.aspx?DataSetCode=NRR"  class="ds" dscode="NRR" qid="102913">Net Replacement Rate in unemployment </a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=GRR"></a><a href="Index.aspx?DataSetCode=GRR"  class="ds" dscode="GRR" qid="102918">Gross Replacement Rate of unemployment benefits</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=HGRR"></a><a href="Index.aspx?DataSetCode=HGRR"  class="ds" dscode="HGRR" qid="102921">Gross Replacement Rate of unemployment benefits - Historical data</a><div style="clear: both;"></div></li></ul></li><li class="t closed"><span>Participation Tax Rates (PTRs)</span><ul><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=PTRSA"></a><a href="Index.aspx?DataSetCode=PTRSA"  class="ds" dscode="PTRSA" qid="102857">PTR for families claiming Guaranteed Minimum Income (GMI) benefits </a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=PTRUB"></a><a href="Index.aspx?DataSetCode=PTRUB"  class="ds" dscode="PTRUB" qid="102859">PTR for families claiming Unemployment Benefits </a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=PTRCCSA"></a><a href="Index.aspx?DataSetCode=PTRCCSA"  class="ds" dscode="PTRCCSA" qid="104896">PTRs for parents claiming Guaranteed Minimum Income (GMI) benefits and using childcare services</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=PTRCCUB"></a><a href="Index.aspx?DataSetCode=PTRCCUB"  class="ds" dscode="PTRCCUB" qid="102922">PTR for families claiming Unemployment Benefits and using childcare services</a><div style="clear: both;"></div></li></ul></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=METR"></a><a href="Index.aspx?DataSetCode=METR"  class="ds" dscode="METR" qid="102907">Marginal Effective Tax Rate (METR)</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=IA"></a><a href="Index.aspx?DataSetCode=IA"  class="ds" dscode="IA" qid="102911">Adequacy of Guaranteed Minimum Income benefits</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=HOURSPOV"></a><a href="Index.aspx?DataSetCode=HOURSPOV"  class="ds" dscode="HOURSPOV" qid="86524">Hours of work needed to escape poverty</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=SBE"></a><a href="Index.aspx?DataSetCode=SBE"  class="ds" dscode="SBE" qid="103562">Strictness of activation requirements </a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=IMW"></a><a href="Index.aspx?DataSetCode=IMW"  class="ds" dscode="IMW" qid="103926">Incomes of minimum wage earners</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=NCC"></a><a href="Index.aspx?DataSetCode=NCC"  class="ds" dscode="NCC" qid="103071">Net childcare cost for parents using childcare facilities</a><div style="clear: both;"></div></li></ul></li><li class="t closed"><span>Better Life Index</span><ul><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=BLI"></a><a href="Index.aspx?DataSetCode=BLI"  class="ds" dscode="BLI" qid="86595">Better Life Index</a><div style="clear: both;"></div></li></ul></li><li class="t closed"><span>Gender</span><ul><li class="t closed"><span>Gender, Institutions and Development Database</span><ul><li class="t closed"><span>Gender, Institutions and Development Database (GID-DB) 2019</span><ul class="group"><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=GIDDB2019"></a><a href="Index.aspx?DataSetCode=GIDDB2019"  class="ds" dscode="GIDDB2019" qid="87277">Gender Institutions and Development Database (GID-DB) 2019</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=GIDDB2019"></a><a href="#" class="q"  dscode="GIDDB2019"  qid="94767">Discrimination in the Family</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=GIDDB2019"></a><a href="#" class="q"  dscode="GIDDB2019"  qid="94773">Restricted Physical Integrity</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=GIDDB2019"></a><a href="#" class="q"  dscode="GIDDB2019"  qid="94774">Restricted Access to Productive and Financial Resources</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=GIDDB2019"></a><a href="#" class="q"  dscode="GIDDB2019"  qid="94775">Restricted Civil Liberties</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=GIDDB2019"></a><a href="#" class="q"  dscode="GIDDB2019"  qid="94772">Africa</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=GIDDB2019"></a><a href="#" class="q"  dscode="GIDDB2019"  qid="94771">Americas</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=GIDDB2019"></a><a href="#" class="q"  dscode="GIDDB2019"  qid="94770">Asia</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=GIDDB2019"></a><a href="#" class="q"  dscode="GIDDB2019"  qid="94769">Europe</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=GIDDB2019"></a><a href="#" class="q"  dscode="GIDDB2019"  qid="95704">Violence against women</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=GIDDB2019"></a><a href="#" class="q"  dscode="GIDDB2019"  qid="95705">Female genital mutilation</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=GIDDB2019"></a><a href="#" class="q"  dscode="GIDDB2019"  qid="95706">Secure access to land assets</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=GIDDB2019"></a><a href="#" class="q"  dscode="GIDDB2019"  qid="95707">Political representation</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=GIDDB2019"></a><a href="#" class="q"  dscode="GIDDB2019"  qid="95709">Girl child marriage</a><div style="clear: both;"></div></li></ul></li><li class="t closed"><span>Social Institutions and Gender Index 2019</span><ul class="group"><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=SIGI2019"></a><a href="Index.aspx?DataSetCode=SIGI2019"  class="ds" dscode="SIGI2019" qid="85722">Social Institutions and Gender Index 2019</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=SIGI2019"></a><a href="#" class="q"  dscode="SIGI2019"  qid="88508">SEA</a><div style="clear: both;"></div></li></ul></li><li class="t closed"><span>Gender, Institutions and Development Database 2014 (GID-DB)</span><ul class="group"><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=GIDDB2014"></a><a href="Index.aspx?DataSetCode=GIDDB2014"  class="ds" dscode="GIDDB2014" qid="61535">Gender, Institutions and Development Database 2014 (GID-DB)</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=GIDDB2014"></a><a href="#" class="q"  dscode="GIDDB2014"  qid="71073">Legal age of marriage</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=GIDDB2014"></a><a href="#" class="q"  dscode="GIDDB2014"  qid="71077">Early Marriage</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=GIDDB2014"></a><a href="#" class="q"  dscode="GIDDB2014"  qid="71084">Parental authority</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=GIDDB2014"></a><a href="#" class="q"  dscode="GIDDB2014"  qid="71087">Divorce</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=GIDDB2014"></a><a href="#" class="q"  dscode="GIDDB2014"  qid="71088">Inheritance</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=GIDDB2014"></a><a href="#" class="q"  dscode="GIDDB2014"  qid="71090">Unpaid care work</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=GIDDB2014"></a><a href="#" class="q"  dscode="GIDDB2014"  qid="71074">Female genital mutilation</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=GIDDB2014"></a><a href="#" class="q"  dscode="GIDDB2014"  qid="71149">Violence against women</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=GIDDB2014"></a><a href="#" class="q"  dscode="GIDDB2014"  qid="71075">Son preference in education</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=GIDDB2014"></a><a href="#" class="q"  dscode="GIDDB2014"  qid="71076">Land titles owned by women</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=GIDDB2014"></a><a href="#" class="q"  dscode="GIDDB2014"  qid="71092">Women political representation</a><div style="clear: both;"></div></li></ul></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=SIGI2014"></a><a href="Index.aspx?DataSetCode=SIGI2014"  class="ds" dscode="SIGI2014" qid="62667">Social Institutions and Gender Index 2014 (SIGI)</a><div style="clear: both;"></div></li><li class="t closed"><span>Gender, Institutions and Development Database 2012 (GID-DB)</span><ul class="group"><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=GIDDB2012"></a><a href="Index.aspx?DataSetCode=GIDDB2012"  class="ds" dscode="GIDDB2012" qid="35278">Social Institutions (Data)</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=GIDDB2012"></a><a href="#" class="q"  dscode="GIDDB2012"  qid="35279">Social Institutions and Gender Index (SIGI)</a><div style="clear: both;"></div></li></ul></li><li class="t closed"><span>Gender, Institutions and Development Database 2009 (GID-DB)</span><ul class="group"><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=GID2"></a><a href="Index.aspx?DataSetCode=GID2"  class="ds" dscode="GID2" qid="70440">Literacy</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=GID2"></a><a href="#" class="q"  dscode="GID2"  qid="20480">Gender, Institutions and Development Database (GID-DB)</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=GID2"></a><a href="#" class="q"  dscode="GID2"  qid="72842">Social Institutions and Gender Index (SIGI)</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=GID2"></a><a href="#" class="q"  dscode="GID2"  qid="20504">Composite Indicators</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=GID2"></a><a href="#" class="q"  dscode="GID2"  qid="20503">Education</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=GID2"></a><a href="#" class="q"  dscode="GID2"  qid="20505">Health and fertility</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=GID2"></a><a href="#" class="q"  dscode="GID2"  qid="20506">Political and economic status of women</a><div style="clear: both;"></div></li></ul></li></ul></li><li class="t closed"><span>Burkina Faso SIGI country study</span><ul><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=BFGID"></a><a href="Index.aspx?DataSetCode=BFGID"  class="ds" dscode="BFGID" qid="82048">Burkina Faso-GID</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=BFSIGI"></a><a href="Index.aspx?DataSetCode=BFSIGI"  class="ds" dscode="BFSIGI" qid="82047">Burkina Faso-SIGI</a><div style="clear: both;"></div></li></ul></li><li class="t closed"><span>Uganda SIGI country study</span><ul><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=U_GID"></a><a href="Index.aspx?DataSetCode=U_GID"  class="ds" dscode="U_GID" qid="67366">Uganda-GID</a><div style="clear: both;"></div></li><li class="t closed"><span>Uganda-SIGI</span><ul class="group"><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=U_SIGI"></a><a href="Index.aspx?DataSetCode=U_SIGI"  class="ds" dscode="U_SIGI" qid="67142">Uganda-SIGI</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=U_SIGI"></a><a href="#" class="q"  dscode="U_SIGI"  qid="67089">Uganda - SIGI & GID</a><div style="clear: both;"></div></li></ul></li></ul></li><li class="t closed"><span>Entrepreneurship</span><ul class="group"><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=GENDER_ENT1"></a><a href="Index.aspx?DataSetCode=GENDER_ENT1"  class="ds" dscode="GENDER_ENT1" qid="54677">Indicators of gender equality in entrepreneurship</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=GENDER_ENT1"></a><a href="#" class="q"  dscode="GENDER_ENT1"  qid="83119">Indicators of female entrepreneurship</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=GENDER_ENT1"></a><a href="#" class="q"  dscode="GENDER_ENT1"  qid="54671">Share of employed who are employers, by sex</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=GENDER_ENT1"></a><a href="#" class="q"  dscode="GENDER_ENT1"  qid="54674">Share of employed who are own-account workers, by sex</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=GENDER_ENT1"></a><a href="#" class="q"  dscode="GENDER_ENT1"  qid="54681">Gender gap in self-employed earnings</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=GENDER_ENT1"></a><a href="#" class="q"  dscode="GENDER_ENT1"  qid="64086">Share of self-employed in the population of 20-29 year old employed, by sex</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=GENDER_ENT1"></a><a href="#" class="q"  dscode="GENDER_ENT1"  qid="70616">Share of self-employed in the population of employed with tertiary education, by sex</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=GENDER_ENT1"></a><a href="#" class="q"  dscode="GENDER_ENT1"  qid="64084">Share of self-employed in the population of employed with foreign-citizenship, by sex</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=GENDER_ENT1"></a><a href="#" class="q"  dscode="GENDER_ENT1"  qid="54676">Share of women inventors</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=GENDER_ENT1"></a><a href="#" class="q"  dscode="GENDER_ENT1"  qid="70617">Share of self-employed who are between 20 and 29 years old, by sex</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=GENDER_ENT1"></a><a href="#" class="q"  dscode="GENDER_ENT1"  qid="54685">Share of self-employed in manufacturing or construction, by sex</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=GENDER_ENT1"></a><a href="#" class="q"  dscode="GENDER_ENT1"  qid="54687">Share of self-employed in services, by sex</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=GENDER_ENT1"></a><a href="#" class="q"  dscode="GENDER_ENT1"  qid="54682">Share of the population with account in a financial institution, by sex</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=GENDER_ENT1"></a><a href="#" class="q"  dscode="GENDER_ENT1"  qid="70935">Share of the population who report borrowing money to start a business, by sex</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=GENDER_ENT1"></a><a href="#" class="q"  dscode="GENDER_ENT1"  qid="76380">Positive business status and outlook, by sex</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=GENDER_ENT1"></a><a href="#" class="q"  dscode="GENDER_ENT1"  qid="70778">Attitude towards entrepreneurial risk, by sex</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=GENDER_ENT1"></a><a href="#" class="q"  dscode="GENDER_ENT1"  qid="70934">Preferences for self-employment, by sex</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=GENDER_ENT1"></a><a href="#" class="q"  dscode="GENDER_ENT1"  qid="54680">Feasibility of self-employment, by sex</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=GENDER_ENT1"></a><a href="#" class="q"  dscode="GENDER_ENT1"  qid="70608">Access to training and money to start a business, by sex</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=GENDER_ENT1"></a><a href="#" class="q"  dscode="GENDER_ENT1"  qid="54675">Share of sole-proprietor enterprises owned by women</a><div style="clear: both;"></div></li></ul></li><li class="t closed"><span>Employment</span><ul class="group"><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=GENDER_EMP"></a><a href="Index.aspx?DataSetCode=GENDER_EMP"  class="ds" dscode="GENDER_EMP" qid="54734">Indicators of gender equality in employment</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=GENDER_EMP"></a><a href="#" class="q"  dscode="GENDER_EMP"  qid="103872">Labour force participation rate, by sex and age group</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=GENDER_EMP"></a><a href="#" class="q"  dscode="GENDER_EMP"  qid="54742">Employment/population ratio, by sex and age group</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=GENDER_EMP"></a><a href="#" class="q"  dscode="GENDER_EMP"  qid="54743">Unemployment rate, by sex and age group</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=GENDER_EMP"></a><a href="#" class="q"  dscode="GENDER_EMP"  qid="54744">Employment and unemployment rate, by sex and age group, quarterly data</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=GENDER_EMP"></a><a href="#" class="q"  dscode="GENDER_EMP"  qid="54746">Share of employed in part-time employment, by sex and age group</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=GENDER_EMP"></a><a href="#" class="q"  dscode="GENDER_EMP"  qid="54748">Share of employed in involuntary part-time employment, by sex and age group</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=GENDER_EMP"></a><a href="#" class="q"  dscode="GENDER_EMP"  qid="54749">Full-time equivalent employment rate, by sex</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=GENDER_EMP"></a><a href="#" class="q"  dscode="GENDER_EMP"  qid="54750">Share of employed in temporary employment, by sex and age group</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=GENDER_EMP"></a><a href="#" class="q"  dscode="GENDER_EMP"  qid="54751">Gender wage gap</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=GENDER_EMP"></a><a href="#" class="q"  dscode="GENDER_EMP"  qid="96330">Share of female managers</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=GENDER_EMP"></a><a href="#" class="q"  dscode="GENDER_EMP"  qid="54755">Distribution of employment by aggregate sectors, by sex</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=GENDER_EMP"></a><a href="#" class="q"  dscode="GENDER_EMP"  qid="54758">Expected number of years in retirement, by sex</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=GENDER_EMP"></a><a href="#" class="q"  dscode="GENDER_EMP"  qid="54753">Female share of seats on boards of the largest publicly listed companies</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=GENDER_EMP"></a><a href="#" class="q"  dscode="GENDER_EMP"  qid="54760">Length of maternity leave, parental leave, and paid father-specific leave</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=GENDER_EMP"></a><a href="#" class="q"  dscode="GENDER_EMP"  qid="54757">Time spent in paid and unpaid work, by sex</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=GENDER_EMP"></a><a href="#" class="q"  dscode="GENDER_EMP"  qid="54761">Enrolment rates in pre-primary education or primary school, children aged 3 to 5 year old</a><div style="clear: both;"></div></li></ul></li></ul></li><li class="t closed"><span>Time Use</span><ul><li class="t closed"><span>Time Use</span><ul class="group"><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=TIME_USE"></a><a href="Index.aspx?DataSetCode=TIME_USE"  class="ds" dscode="TIME_USE" qid="82438">Time use </a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=TIME_USE"></a><a href="#" class="q"  dscode="TIME_USE"  qid="82791">By country</a><div style="clear: both;"></div></li></ul></li></ul></li><li class="t closed"><span>Family</span><ul><li class="t closed"><span>Family Database</span><ul class="group"><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=FAMILY"></a><a href="Index.aspx?DataSetCode=FAMILY"  class="ds" dscode="FAMILY" qid="68242">Family Database</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=FAMILY"></a><a href="#" class="q"  dscode="FAMILY"  qid="68244">By indicator - The structure of families</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=FAMILY"></a><a href="#" class="q"  dscode="FAMILY"  qid="68245">By indicator - The labour market position of families</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=FAMILY"></a><a href="#" class="q"  dscode="FAMILY"  qid="68246">By indicator - Public policies for families and children</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=FAMILY"></a><a href="#" class="q"  dscode="FAMILY"  qid="68247">By indicator - Child outcomes</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=FAMILY"></a><a href="#" class="q"  dscode="FAMILY"  qid="68249">By country - The structure of families</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=FAMILY"></a><a href="#" class="q"  dscode="FAMILY"  qid="68250">By country - The labour market position of families</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=FAMILY"></a><a href="#" class="q"  dscode="FAMILY"  qid="68251">By country - Public policies for families and children</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=FAMILY"></a><a href="#" class="q"  dscode="FAMILY"  qid="68252">By country - Child outcomes</a><div style="clear: both;"></div></li></ul></li></ul></li><li class="t closed"><span>Child Well-Being</span><ul><li class="t closed"><span>Children Well Being</span><ul class="group"><li class="q"><a href="Index.aspx?DataSetCode=CWB"  class="ds" dscode="CWB" qid="81145">Child Well-Being</a><div style="clear: both;"></div></li><li class="q"><a href="#" class="q"  dscode="CWB"  qid="97668">CWB24</a><div style="clear: both;"></div></li><li class="q"><a href="#" class="q"  dscode="CWB"  qid="81204">Home and Family Environment</a><div style="clear: both;"></div></li><li class="q"><a href="#" class="q"  dscode="CWB"  qid="81205">Health and Safety</a><div style="clear: both;"></div></li><li class="q"><a href="#" class="q"  dscode="CWB"  qid="81206">Education and School Life</a><div style="clear: both;"></div></li><li class="q"><a href="#" class="q"  dscode="CWB"  qid="81207">Activities and Life Satisfaction</a><div style="clear: both;"></div></li><li class="q"><a href="#" class="q"  dscode="CWB"  qid="81208">Child Policies</a><div style="clear: both;"></div></li></ul></li></ul></li><li class="t closed"><span>Social Protection and Well-being – Archives</span><ul><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=BLI2013"></a><a href="Index.aspx?DataSetCode=BLI2013"  class="ds" dscode="BLI2013" qid="56923">Better Life Index - Edition 2013</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=BLI2014"></a><a href="Index.aspx?DataSetCode=BLI2014"  class="ds" dscode="BLI2014" qid="62858">Better Life Index - Edition 2014</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=BLI2015"></a><a href="Index.aspx?DataSetCode=BLI2015"  class="ds" dscode="BLI2015" qid="65757">Better Life Index - Edition 2015</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=BLI2016"></a><a href="Index.aspx?DataSetCode=BLI2016"  class="ds" dscode="BLI2016" qid="65499">Better Life Index - Edition 2016</a><div style="clear: both;"></div></li><li class="q"><a class="mi" href="OECDStat_Metadata/ShowMetadata.ashx?DataSet=BLI2017"></a><a href="Index.aspx?DataSetCode=BLI2017"  class="ds" dscode="BLI2017" qid="72467">Better Life Index - Edition 2017</a><div style="clear: both;"></div></li></ul></li></ul></li></ul>
+    </div>
+    
+</div>
+
+                    </div>
+                    <div id="bPopular" class="navPane">
+                        <div id="popularHolder" class="left-nav-content no-action">
+                            
+<script language="javascript" type="text/javascript">
+var ishotlink = false;
+function ShowHotlinksQuery(HotlinksQueryId) {
+    ishotlink = true;
+    subSessionId = $('input[id*="TBSubSessionId"]').val();
+    CallServer("HotLinksQuery&" + HotlinksQueryId + "&" + subSessionId);
+}
+function opentab0() {
+    $("#browsePanel").tabs('select', 0);
+    return false;
+}
+</script>
+<div id="BrowseQueriesContent" class="collapsible"> 
+<div id="myquery">
+
+</div>
+    <div id="browsequeriestree">
+        <ul class="treeview"><li class="q"><a href="index.aspx?queryid=51396" class="q"  qid="51396">Economic Outlook</a><div style="clear: both;"></div></li><li class="q"><a href="index.aspx?queryid=60702" class="q"  qid="60702">Gross domestic product (annual)</a><div style="clear: both;"></div></li><li class="q"><a href="index.aspx?queryid=350" class="q"  qid="350">Gross domestic product (quarterly)</a><div style="clear: both;"></div></li><li class="q"><a href="index.aspx?queryid=6617" class="q"  qid="6617">Composite Leading Indicators</a><div style="clear: both;"></div></li><li class="q"><a href="index.aspx?queryid=221" class="q"  qid="221">Consumer price indices - inflation</a><div style="clear: both;"></div></li><li class="q"><a href="https://stats.oecd.org/Index.aspx?datasetcode=TIVA_2018_C1"  class="l">Trade in Value Added (December 2018)</a></li><li class="q"><a href="index.aspx?queryid=24879" class="q"  qid="24879">Health Status</a><div style="clear: both;"></div></li><li class="q"><a href="index.aspx?queryid=35253" class="q"  qid="35253">Labour Market Statistics</a><div style="clear: both;"></div></li><li class="q"><a href="index.aspx?queryid=6779" class="q"  qid="6779">Monthly Monetary and Financial Statistics (MEI)</a><div style="clear: both;"></div></li><li class="q"><a href="index.aspx?queryid=36357" class="q"  qid="36357">Agricultural Outlook</a><div style="clear: both;"></div></li><li class="q"><a href="index.aspx?queryid=64755" class="q"  qid="64755">Bilateral Trade by Industry and End-use (ISIC4)</a><div style="clear: both;"></div></li><li class="q"><a href="http://www.oecd.org/statistics/"  class="l">Statistics from A to Z</a></li></ul>
+        <script type="text/javascript" language="javascript">
+            var treeviewdatasetcode = "";
+            var treeviewqueryid = 0;
+            $(function () {
+                treeviewdatasetcode = 'BLI';treeviewqueryid = 0;
+
+                var treeviewlink;
+                treeviewlink = $("#browsequeriestree a[qid= '" + treeviewqueryid + "' ]").first();
+
+                if (treeviewqueryid && !treeviewlink.hasClass("ds")) {
+                    if (!treeviewlink.hasClass("qclicked")) {
+                        $("#browsequeriestree .qclicked").removeClass("qclicked");
+                        treeviewlink.addClass("qclicked");
+                        treeviewlink.parents("li.t").removeClass("closed").addClass("opened").children("ul").show();
+                    }
+                }
+                else if (treeviewdatasetcode) {
+                    treeviewlink = $("#browsequeriestree a[dscode= '" + treeviewdatasetcode + "' ]").first();
+                    if (!treeviewlink.hasClass("dsclicked") || !treeviewlink.hasClass("pdsclicked")) {
+                        $("#browsequeriestree .dsclicked").removeClass("dsclicked");
+                        $("#browsequeriestree .pdsclicked").removeClass("pdsclicked");
+                        if (treeviewlink.hasClass("pds")) {
+                            treeviewlink.addClass("pdsclicked");
+                        }
+                        else {
+                            treeviewlink.addClass("dsclicked");
+                        }
+                        treeviewlink.parents("li.t").removeClass("closed").addClass("opened").children("ul").show();
+                    }
+                }
+            });
+        </script>
+    </div>
+</div>
+<div id="_ctl0__ctl0_cphCentre_ContentPlaceHolder1__ctl2_divAllData" class="alldata">
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="" onclick="opentab0();return false;">>> Data by theme</a>
+</div>
+
+                        </div>
+                    </div>
+                </div>
+                <script language="text/javascript" type="text/javascript">
+                    var bisthemeloaded = true;
+                    
+                    if (window.location.hash.toLowerCase().indexOf("#bpopular") >= 0) 
+                    {
+                        $("#browsePanel").tabs({ selected: 1 }); 
+                    }
+                    else
+                    {
+                        $("#browsePanel").tabs({ selected: 0 });
+                    }
+                    
+                    if ($.browser.msie) 
+                    {
+                        $("#browsePanel ul li.ui-state-default").not(".ui-state-active").find("a").addClass("tabwithborderbottom");
+                    }
+
+                    $('#browsePanel').bind('tabsselect', function (event, ui) {
+                        if ($.browser.msie) {
+                            $("#browsePanel ul li.ui-state-default a").removeClass("tabwithborderbottom");
+                            if (ui.index == 1)
+                            {
+                                $("#browsePanel ul li.ui-state-default.ui-state-active").find("a").addClass("tabwithborderbottom"); 
+                            }
+                        }
+                        if (ui.index == 0 && bisthemeloaded == false) {
+                            bisthemeloaded = true;
+                            changeTheme();
+                            $("#browsePanel").tabs('select', 0);
+                        }
+                    });
+                </script>
+            
+</div>
+            
+        </div>
+        <div id="toggler-west" class="left toggler toggler-west-open" style="background-image: url(content/Themes/OECD/images/togglers.png)">
+            <img alt="" src="img/transparent.gif" width="18px" height="250px" /></div>
+        <div id="divErrorMessageForCallback" class="left" style="position: relative; display:none">
+            <h2 style="color:#999999">This dataset preview is momentarily unavailable.</h2> <p style="color:#999999">Please try again or select another dataset.</p>
+         </div>
+        <div id="divcontent" class="left" style="position: relative">            
+            <input name="_ctl0:_ctl0:cphCentre:ContentPlaceHolder1:_ctl4:hiddenSort" type="hidden" id="_ctl0__ctl0_cphCentre_ContentPlaceHolder1__ctl4_hiddenSort" value="NOSORT" />
+<input name="_ctl0:_ctl0:cphCentre:ContentPlaceHolder1:_ctl4:hiddenPageNumber" type="hidden" id="_ctl0__ctl0_cphCentre_ContentPlaceHolder1__ctl4_hiddenPageNumber" value="1" />
+<input name="_ctl0:_ctl0:cphCentre:ContentPlaceHolder1:_ctl4:hiddenCurrentLanguage" type="hidden" id="_ctl0__ctl0_cphCentre_ContentPlaceHolder1__ctl4_hiddenCurrentLanguage" />
+<input name="_ctl0:_ctl0:cphCentre:ContentPlaceHolder1:_ctl4:hiddenPDim_Trigger" type="hidden" id="_ctl0__ctl0_cphCentre_ContentPlaceHolder1__ctl4_hiddenPDim_Trigger" value="false" />
+<input name="_ctl0:_ctl0:cphCentre:ContentPlaceHolder1:_ctl4:hiddenPDim_DimCode" type="hidden" id="_ctl0__ctl0_cphCentre_ContentPlaceHolder1__ctl4_hiddenPDim_DimCode" />
+<input name="_ctl0:_ctl0:cphCentre:ContentPlaceHolder1:_ctl4:hiddenPDim_MemberCode" type="hidden" id="_ctl0__ctl0_cphCentre_ContentPlaceHolder1__ctl4_hiddenPDim_MemberCode" />
+<input name="_ctl0:_ctl0:cphCentre:ContentPlaceHolder1:_ctl4:hiddenIsMQ" type="hidden" id="_ctl0__ctl0_cphCentre_ContentPlaceHolder1__ctl4_hiddenIsMQ" />
+<script type='text/javascript'>var ohiddenSort = document.getElementById('_ctl0__ctl0_cphCentre_ContentPlaceHolder1__ctl4_hiddenSort');var ohiddenPageNumber = document.getElementById('_ctl0__ctl0_cphCentre_ContentPlaceHolder1__ctl4_hiddenPageNumber');var ohiddenPDim_Trigger = document.getElementById('_ctl0__ctl0_cphCentre_ContentPlaceHolder1__ctl4_hiddenPDim_Trigger');var ohiddenPDim_DimCode = document.getElementById('_ctl0__ctl0_cphCentre_ContentPlaceHolder1__ctl4_hiddenPDim_DimCode');var ohiddenPDim_MemberCode = document.getElementById('_ctl0__ctl0_cphCentre_ContentPlaceHolder1__ctl4_hiddenPDim_MemberCode');var ohiddenIsMQ = document.getElementById('_ctl0__ctl0_cphCentre_ContentPlaceHolder1__ctl4_hiddenIsMQ');mergequery = document.getElementById('_ctl0__ctl0_cphCentre_ContentPlaceHolder1__ctl4_MergeQuery');</Script>
+
+<script type="text/javascript" src="js/ajax.js"></script>
+<script type="text/javascript" src="Scripts/Data.js?v2"></script>
+<script type="text/javascript">
+    var showSurvey = 'False';
+    selectedTheme = 'OECD';
+
+    function redirectToSurvey(exporttype) {
+        redirectToSurvey(exporttype, '');
+    }
+    
+    function redirectToSurvey(exporttype, firstDataPointIndexPerPage) {
+        //alert(showSurvey);
+        if (showSurvey == 'True') {
+            showSurvey = false;  // we don't show the survey twice on the same page without page reload
+            dotstatExportSurvey(exporttype, firstDataPointIndexPerPage, true);
+        } else {
+            dotstatExport(exporttype, firstDataPointIndexPerPage, true);            
+        }
+    }
+
+    $.fn.idleTimeout = function(options) {
+        selectedTheme = 'OECD';
+    }
+</script>
+
+<div id="_ctl0__ctl0_cphCentre_ContentPlaceHolder1__ctl4_contentcenter">
+    
+    <div id="_ctl0__ctl0_cphCentre_ContentPlaceHolder1__ctl4_divQuery" class="divQuery">
+        <p id="_ctl0__ctl0_cphCentre_ContentPlaceHolder1__ctl4_pCompomentTitle" class="compomenttitle">
+            
+        </p>
+        <h2 id="_ctl0__ctl0_cphCentre_ContentPlaceHolder1__ctl4_querytitle" class="querytitle">
+            <span class="dtitle">
+                Better Life Index
+                <a id="_ctl0__ctl0_cphCentre_ContentPlaceHolder1__ctl4_aMetaData" class="metadata" onclick="ShowMetadata(&#39;BLI&#39;,&#39;&#39;,&#39;&#39;);">
+                    <img id="_ctl0__ctl0_cphCentre_ContentPlaceHolder1__ctl4_datasetMetadataIcon" src="Content/themes/OECD/images/information.gif" border="0" />
+                </a>
+                
+            </span><span class="qtitle">
+                </span>
+        </h2>
+        
+        <div id="_ctl0__ctl0_cphCentre_ContentPlaceHolder1__ctl4_divMenuBar">
+            <div id="menubar" class="clearfix">
+                <ul id="menubar-list" class="menubar-icons">
+                    <li id="menubar-customize"><a href="#"><span id="customize-icon" class="top-menubar-icon">&nbsp;</span><span
+                        style="float: left;">Customise</span></a>
+                        <ul class="menubar-sublist" id="customize-menu">
+                            <li id="menuitemDataSelection"><a href="#"><span id="data-selection-icon" class="ui-button-icon-primary ui-icon">
+                            </span>
+                                Selection&hellip;</a>
+                                <ul id="dimension-list">
+                                    <li><a href="#" onclick="OpenDialog( './ModalDimWebTree.aspx?DimensionCode=LOCATION', 'Customise selection');"><span class="ui-button-icon-primary ui-icon ui-icon-arrowstop-1-e"></span>Country&nbsp;[42&nbsp;/&nbsp;42]</a></li><li><a href="#" onclick="OpenDialog( './ModalDimWebTree.aspx?DimensionCode=INDICATOR', 'Customise selection');"><span class="ui-button-icon-primary ui-icon ui-icon-arrowstop-1-e"></span>Indicator&nbsp;[35&nbsp;/&nbsp;35]</a></li><li><a href="#" onclick="OpenDialog( './ModalDimWebTree.aspx?DimensionCode=MEASURE', 'Customise selection');"><span class="ui-button-icon-primary ui-icon ui-icon-arrowstop-1-e"></span>Measure&nbsp;[1&nbsp;/&nbsp;1]</a></li><li><a href="#" onclick="OpenDialog( './ModalDimWebTree.aspx?DimensionCode=INEQUALITY', 'Customise selection');"><span class="ui-button-icon-primary ui-icon ui-icon-arrowstop-1-e"></span>Inequality&nbsp;[5&nbsp;/&nbsp;5]</a></li>
+                                </ul>
+                            </li>
+                            <li id="menuitemLayout"><a id="_ctl0__ctl0_cphCentre_ContentPlaceHolder1__ctl4_PivotDimensions" onclick="OpenThisQuery(&#39;Options&#39;);"><span
+                                id="pivot-dimensions-icon" class="ui-button-icon-primary ui-icon"></span>
+                                Layout</a></li>
+                            <li id="menuitemTableOption"><a id="_ctl0__ctl0_cphCentre_ContentPlaceHolder1__ctl4_Options" onclick="OpenThisQuery(&#39;Options2&#39;);"><span id="options-icon"
+                                class="ui-button-icon-primary ui-icon"></span>
+                                Table options</a></li>
+                        </ul>
+                    </li>
+                    <li id="menubar-export"><a href="#"><span id="export-icon" class="top-menubar-icon">&nbsp;</span><span
+                        style="display: block; float: left;">Export</span></a>
+                        <ul class="menubar-sublist">
+                            <li id="menuitemExportExcel">
+                                <a id="_ctl0__ctl0_cphCentre_ContentPlaceHolder1__ctl4_ExportExcel" onclick="redirectToSurvey(&#39;excel&#39;, &#39;&#39;);">
+                                    <span class="ui-button-icon-primary ui-icon" id="export-excel-icon"></span>
+                                    Excel
+                                </a>
+                            </li>
+                            <li id="menuitemExportCSV">
+                                <a id="_ctl0__ctl0_cphCentre_ContentPlaceHolder1__ctl4_ExportCSV" onclick="redirectToSurvey(&#39;csv&#39;);">
+                                    <span class="ui-button-icon-primary ui-icon" id="export-csv-icon"></span>
+                                    Text file (CSV)
+                                </a>
+                            </li>
+                            <li id="menuitemExportPCAxis">
+                                <a id="_ctl0__ctl0_cphCentre_ContentPlaceHolder1__ctl4_ExportPCAxis" onclick="redirectToSurvey(&#39;pcaxis&#39;);">
+                                    <span class="ui-button-icon-primary ui-icon" id="export-pc-axis-icon"></span>
+                                    PC-axis
+                                </a>
+                            </li>
+                            
+                            <li id="_ctl0__ctl0_cphCentre_ContentPlaceHolder1__ctl4_menuitemExportSDMX">
+                                <a id="_ctl0__ctl0_cphCentre_ContentPlaceHolder1__ctl4_ExportSDMX" onclick="redirectToSurvey(&#39;sdmx&#39;);">
+                                    <span class="ui-button-icon-primary ui-icon" id="export-sdmx-icon"></span>
+                                    SDMX (XML)
+                                </a>
+                            </li>
+                            <li id="menuitemExportReadymadeFiles">
+                                <a id="_ctl0__ctl0_cphCentre_ContentPlaceHolder1__ctl4_ExportReadyMadeFiles" class="ui-state-disabled">
+                                    <span class="ui-button-icon-primary ui-icon" id="Span1"></span>
+                                    Related files
+                                </a>
+                            </li>
+                            
+                        </ul>
+                    </li>
+                    
+                    <li id="_ctl0__ctl0_cphCentre_ContentPlaceHolder1__ctl4_MenubarQueries">
+                        <a href="Controls/#yoursel" id="_ctl0__ctl0_cphCentre_ContentPlaceHolder1__ctl4_QueryManagement">
+                            <span id="my-queries-icon" class="top-menubar-icon">&nbsp;</span>
+                            <span style="float: left;">My Queries</span>
+                        </a>
+                        <ul id="_ctl0__ctl0_cphCentre_ContentPlaceHolder1__ctl4_QueryManagementSubmenu" class="menubar-sublist">
+                            <li id="menuitemSaveQuery"><a id="_ctl0__ctl0_cphCentre_ContentPlaceHolder1__ctl4_SaveQuery" onclick="alert(&#39;Please log in first to use this functionality.&#39;);">
+                                <span id="save-query-icon" class="ui-button-icon-primary ui-icon"></span>
+                                Save
+                            </a></li>
+                            <li id="menuitemMergeQuery" style="display: none">
+                                <a id="_ctl0__ctl0_cphCentre_ContentPlaceHolder1__ctl4_MergeQuery" class="ui-state-disabled">
+                                    <span id="merged-queries-icon" class="ui-button-icon-primary ui-icon"></span>
+                                    Combine
+                                </a>
+                            </li>
+                            <li id="menuitemManageQuery">
+                                <a id="_ctl0__ctl0_cphCentre_ContentPlaceHolder1__ctl4_QueryManager" onclick="alert(&#39;Please log in first to use this functionality.&#39;);">
+                                    <span id="query-manager-icon" class="ui-button-icon-primary ui-icon"></span>
+                                    Manage
+                                </a>
+                            </li>
+                            
+                        </ul>
+                    </li>
+                    
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+
+        function popup(page) {
+            var left;
+            var top;
+            top = ((screen.height - 420) / 2);
+            left = ((screen.width - 650) / 2);
+            var owindow = window.open(page, "popup", "toolbar=false,scrollbars=false,width=650,height=420,left=" + left + ",top=" + top + "");
+            owindow.focus();
+            if (!$.browser.msie) {
+                e.stopPropagation();
+            }
+            else {
+                window.event.cancelBubble = true;
+            }
+            return false;
+        }
+
+        $(".menubar-icons").menubar({
+            autoExpand: true,
+            menuIcon: true,
+            buttons: true
+        });
+
+        var queryid = '';
+        var datasetcode = '';
+        var mergequery;
+
+        datasetcode = 'BLI';queryid = 86595; 
+	       
+        function exportreadymadefiles_clientclick()
+        {
+            if (typeof modalreadymadefilestitle != 'undefined') {
+                OpenDialog("./DownloadFiles.aspx?HideTopMenu=yes&DatasetCode=" + datasetcode, modalreadymadefilestitle, 'auto');
+            }
+            else {
+                OpenDialog( "./DownloadFiles.aspx?HideTopMenu=yes&DatasetCode=" + datasetcode, "Related files", 'auto');
+            }
+        }
+
+    </script>
+    <div id="querymessage">
+        <div id="_ctl0__ctl0_cphCentre_ContentPlaceHolder1__ctl4_MessageOrWarning">
+            <span id="_ctl0__ctl0_cphCentre_ContentPlaceHolder1__ctl4_lblContextMessage" class="heading2"><b><p><font size="2" color="red">Data cannot be compared between different editions of the Better Life Index. For more information on change over time, please contact <A HREF="wellbeing@oecd.org">wellbeing@oecd.org</A>.</font></p></b></span>
+            <span id="_ctl0__ctl0_cphCentre_ContentPlaceHolder1__ctl4_lblWarning"></span>
+        </div>
+    </div>
+    
+    <div id="_ctl0__ctl0_cphCentre_ContentPlaceHolder1__ctl4_OutpoutContainer" class="outpoutcontainer"><div id="tablecontainer"><div id="tabletofreeze"><table class="DataTable" cellspacing="1" cellpadding="0"><thead><tr><th colspan="3" class="PDimName"><b><a class="dimensionSelectMemberWhiteButton" href="#" onclick="OpenDialog('./ModalDimWebTree.aspx?DimensionCode=INEQUALITY', 'Customize');">Inequality</a></b></th><th colspan="24" class="PDim" align="left"><select class="PDim" name="PDim_INEQUALITY" id="PDim_INEQUALITY" onchange="ChgPageSel(this)"><option selected value="0~TOT">Total</option><option value="1~MN">Men</option><option value="2~WMN">Women</option><option value="3~HGH">High</option><option value="4~LW">Low</option><select></th></tr><tr><th colspan="3" class="PDimName"><b><a class="dimensionSelectMemberWhiteButton" href="#" onclick="OpenDialog('./ModalDimWebTree.aspx?DimensionCode=MEASURE', 'Customize');">Measure</a></b></th><th colspan="24" class="PDim" align="left">Value</tr><tr><th colspan="3" rowspan="2" class="HDimName"><b><a class="dimensionSelectMemberButton" href="#" onclick="OpenDialog('./ModalDimWebTree.aspx?DimensionCode=INDICATOR', 'Customize');">Indicator</a></b></th><th colspan="3" class="HDim">Housing</th><th colspan="2" class="HDim">Income</th><th colspan="4" class="HDim">Jobs</th><th class="HDim">Community</th><th colspan="3" class="HDim">Education</th><th colspan="2" class="HDim">Environment</th><th colspan="2" class="HDim">Civic engagement</th><th colspan="2" class="HDim">Health</th><th class="HDim">Life Satisfaction</th><th colspan="2" class="HDim">Safety</th><th colspan="2" class="HDim">Work-Life Balance</th></tr><tr><th class="HDim">Dwellings without basic facilities<img class="cursor metadataLink" onclick="javascript:ShowMetadata('BLI','[INDICATOR].[HO_BASE]', true);" alt="Information on item" src="/Content/themes/OECD/images/information.gif" /></th><th class="HDim">Housing expenditure<img class="cursor metadataLink" onclick="javascript:ShowMetadata('BLI','[INDICATOR].[HO_HISH]', true);" alt="Information on item" src="/Content/themes/OECD/images/information.gif" /></th><th class="HDim">Rooms per person<img class="cursor metadataLink" onclick="javascript:ShowMetadata('BLI','[INDICATOR].[HO_NUMR]', true);" alt="Information on item" src="/Content/themes/OECD/images/information.gif" /></th><th class="HDim">Household net adjusted disposable income<img class="cursor metadataLink" onclick="javascript:ShowMetadata('BLI','[INDICATOR].[IW_HADI]', true);" alt="Information on item" src="/Content/themes/OECD/images/information.gif" /></th><th class="HDim">Household net wealth<img class="cursor metadataLink" onclick="javascript:ShowMetadata('BLI','[INDICATOR].[IW_HNFW]', true);" alt="Information on item" src="/Content/themes/OECD/images/information.gif" /></th><th class="HDim">Labour market insecurity<img class="cursor metadataLink" onclick="javascript:ShowMetadata('BLI','[INDICATOR].[JE_LMIS]', true);" alt="Information on item" src="/Content/themes/OECD/images/information.gif" /></th><th class="HDim">Employment rate<img class="cursor metadataLink" onclick="javascript:ShowMetadata('BLI','[INDICATOR].[JE_EMPL]', true);" alt="Information on item" src="/Content/themes/OECD/images/information.gif" /></th><th class="HDim">Long-term unemployment rate<img class="cursor metadataLink" onclick="javascript:ShowMetadata('BLI','[INDICATOR].[JE_LTUR]', true);" alt="Information on item" src="/Content/themes/OECD/images/information.gif" /></th><th class="HDim">Personal earnings<img class="cursor metadataLink" onclick="javascript:ShowMetadata('BLI','[INDICATOR].[JE_PEARN]', true);" alt="Information on item" src="/Content/themes/OECD/images/information.gif" /></th><th class="HDim">Quality of support network<img class="cursor metadataLink" onclick="javascript:ShowMetadata('BLI','[INDICATOR].[SC_SNTWS]', true);" alt="Information on item" src="/Content/themes/OECD/images/information.gif" /></th><th class="HDim">Educational attainment<img class="cursor metadataLink" onclick="javascript:ShowMetadata('BLI','[INDICATOR].[ES_EDUA]', true);" alt="Information on item" src="/Content/themes/OECD/images/information.gif" /></th><th class="HDim">Student skills<img class="cursor metadataLink" onclick="javascript:ShowMetadata('BLI','[INDICATOR].[ES_STCS]', true);" alt="Information on item" src="/Content/themes/OECD/images/information.gif" /></th><th class="HDim">Years in education<img class="cursor metadataLink" onclick="javascript:ShowMetadata('BLI','[INDICATOR].[ES_EDUEX]', true);" alt="Information on item" src="/Content/themes/OECD/images/information.gif" /></th><th class="HDim">Air pollution<img class="cursor metadataLink" onclick="javascript:ShowMetadata('BLI','[INDICATOR].[EQ_AIRP]', true);" alt="Information on item" src="/Content/themes/OECD/images/information.gif" /></th><th class="HDim">Water quality<img class="cursor metadataLink" onclick="javascript:ShowMetadata('BLI','[INDICATOR].[EQ_WATER]', true);" alt="Information on item" src="/Content/themes/OECD/images/information.gif" /></th><th class="HDim">Stakeholder engagement for developing regulations<img class="cursor metadataLink" onclick="javascript:ShowMetadata('BLI','[INDICATOR].[CG_SENG]', true);" alt="Information on item" src="/Content/themes/OECD/images/information.gif" /></th><th class="HDim">Voter turnout<img class="cursor metadataLink" onclick="javascript:ShowMetadata('BLI','[INDICATOR].[CG_VOTO]', true);" alt="Information on item" src="/Content/themes/OECD/images/information.gif" /></th><th class="HDim">Life expectancy<img class="cursor metadataLink" onclick="javascript:ShowMetadata('BLI','[INDICATOR].[HS_LEB]', true);" alt="Information on item" src="/Content/themes/OECD/images/information.gif" /></th><th class="HDim">Self-reported health<img class="cursor metadataLink" onclick="javascript:ShowMetadata('BLI','[INDICATOR].[HS_SFRH]', true);" alt="Information on item" src="/Content/themes/OECD/images/information.gif" /></th><th class="HDim">Life satisfaction<img class="cursor metadataLink" onclick="javascript:ShowMetadata('BLI','[INDICATOR].[SW_LIFS]', true);" alt="Information on item" src="/Content/themes/OECD/images/information.gif" /></th><th class="HDim">Feeling safe walking alone at night<img class="cursor metadataLink" onclick="javascript:ShowMetadata('BLI','[INDICATOR].[PS_FSAFEN]', true);" alt="Information on item" src="/Content/themes/OECD/images/information.gif" /></th><th class="HDim">Homicide rate<img class="cursor metadataLink" onclick="javascript:ShowMetadata('BLI','[INDICATOR].[PS_REPH]', true);" alt="Information on item" src="/Content/themes/OECD/images/information.gif" /></th><th class="HDim">Employees working very long hours<img class="cursor metadataLink" onclick="javascript:ShowMetadata('BLI','[INDICATOR].[WL_EWLH]', true);" alt="Information on item" src="/Content/themes/OECD/images/information.gif" /></th><th class="HDim">Time devoted to leisure and personal care<img class="cursor metadataLink" onclick="javascript:ShowMetadata('BLI','[INDICATOR].[WL_TNOW]', true);" alt="Information on item" src="/Content/themes/OECD/images/information.gif" /></th></tr><tr><th colspan="3" rowspan="3" class="HDimName"><b>Unit</b></th><th class="HDim">Percentage</th><th class="HDim">Percentage</th><th class="HDim">Ratio</th><th class="HDim">US Dollar</th><th class="HDim">US Dollar</th><th class="HDim">Percentage</th><th class="HDim">Percentage</th><th class="HDim">Percentage</th><th class="HDim">US Dollar</th><th class="HDim">Percentage</th><th class="HDim">Percentage</th><th class="HDim">Average score</th><th class="HDim">Years</th><th class="HDim">Micrograms per cubic metre</th><th class="HDim">Percentage</th><th class="HDim">Average score</th><th class="HDim">Percentage</th><th class="HDim">Years</th><th class="HDim">Percentage</th><th class="HDim">Average score</th><th class="HDim">Percentage</th><th class="HDim">Ratio</th><th class="HDim">Percentage</th><th class="HDim">Hours</th></tr><tr><th class="HDim" style="border-top:0px"><img class="cursor" onclick="javascript:onSort('HO_BASE', 1)" src="Content/themes/OECD/images/up_normal.gif" alt=""><img class="cursor" onclick="javascript:onSort('HO_BASE', -1)" src="Content/themes/OECD/images/down_normal.gif" alt=""></th><th class="HDim" style="border-top:0px"><img class="cursor" onclick="javascript:onSort('HO_HISH', 1)" src="Content/themes/OECD/images/up_normal.gif" alt=""><img class="cursor" onclick="javascript:onSort('HO_HISH', -1)" src="Content/themes/OECD/images/down_normal.gif" alt=""></th><th class="HDim" style="border-top:0px"><img class="cursor" onclick="javascript:onSort('HO_NUMR', 1)" src="Content/themes/OECD/images/up_normal.gif" alt=""><img class="cursor" onclick="javascript:onSort('HO_NUMR', -1)" src="Content/themes/OECD/images/down_normal.gif" alt=""></th><th class="HDim" style="border-top:0px"><img class="cursor" onclick="javascript:onSort('IW_HADI', 1)" src="Content/themes/OECD/images/up_normal.gif" alt=""><img class="cursor" onclick="javascript:onSort('IW_HADI', -1)" src="Content/themes/OECD/images/down_normal.gif" alt=""></th><th class="HDim" style="border-top:0px"><img class="cursor" onclick="javascript:onSort('IW_HNFW', 1)" src="Content/themes/OECD/images/up_normal.gif" alt=""><img class="cursor" onclick="javascript:onSort('IW_HNFW', -1)" src="Content/themes/OECD/images/down_normal.gif" alt=""></th><th class="HDim" style="border-top:0px"><img class="cursor" onclick="javascript:onSort('JE_LMIS', 1)" src="Content/themes/OECD/images/up_normal.gif" alt=""><img class="cursor" onclick="javascript:onSort('JE_LMIS', -1)" src="Content/themes/OECD/images/down_normal.gif" alt=""></th><th class="HDim" style="border-top:0px"><img class="cursor" onclick="javascript:onSort('JE_EMPL', 1)" src="Content/themes/OECD/images/up_normal.gif" alt=""><img class="cursor" onclick="javascript:onSort('JE_EMPL', -1)" src="Content/themes/OECD/images/down_normal.gif" alt=""></th><th class="HDim" style="border-top:0px"><img class="cursor" onclick="javascript:onSort('JE_LTUR', 1)" src="Content/themes/OECD/images/up_normal.gif" alt=""><img class="cursor" onclick="javascript:onSort('JE_LTUR', -1)" src="Content/themes/OECD/images/down_normal.gif" alt=""></th><th class="HDim" style="border-top:0px"><img class="cursor" onclick="javascript:onSort('JE_PEARN', 1)" src="Content/themes/OECD/images/up_normal.gif" alt=""><img class="cursor" onclick="javascript:onSort('JE_PEARN', -1)" src="Content/themes/OECD/images/down_normal.gif" alt=""></th><th class="HDim" style="border-top:0px"><img class="cursor" onclick="javascript:onSort('SC_SNTWS', 1)" src="Content/themes/OECD/images/up_normal.gif" alt=""><img class="cursor" onclick="javascript:onSort('SC_SNTWS', -1)" src="Content/themes/OECD/images/down_normal.gif" alt=""></th><th class="HDim" style="border-top:0px"><img class="cursor" onclick="javascript:onSort('ES_EDUA', 1)" src="Content/themes/OECD/images/up_normal.gif" alt=""><img class="cursor" onclick="javascript:onSort('ES_EDUA', -1)" src="Content/themes/OECD/images/down_normal.gif" alt=""></th><th class="HDim" style="border-top:0px"><img class="cursor" onclick="javascript:onSort('ES_STCS', 1)" src="Content/themes/OECD/images/up_normal.gif" alt=""><img class="cursor" onclick="javascript:onSort('ES_STCS', -1)" src="Content/themes/OECD/images/down_normal.gif" alt=""></th><th class="HDim" style="border-top:0px"><img class="cursor" onclick="javascript:onSort('ES_EDUEX', 1)" src="Content/themes/OECD/images/up_normal.gif" alt=""><img class="cursor" onclick="javascript:onSort('ES_EDUEX', -1)" src="Content/themes/OECD/images/down_normal.gif" alt=""></th><th class="HDim" style="border-top:0px"><img class="cursor" onclick="javascript:onSort('EQ_AIRP', 1)" src="Content/themes/OECD/images/up_normal.gif" alt=""><img class="cursor" onclick="javascript:onSort('EQ_AIRP', -1)" src="Content/themes/OECD/images/down_normal.gif" alt=""></th><th class="HDim" style="border-top:0px"><img class="cursor" onclick="javascript:onSort('EQ_WATER', 1)" src="Content/themes/OECD/images/up_normal.gif" alt=""><img class="cursor" onclick="javascript:onSort('EQ_WATER', -1)" src="Content/themes/OECD/images/down_normal.gif" alt=""></th><th class="HDim" style="border-top:0px"><img class="cursor" onclick="javascript:onSort('CG_SENG', 1)" src="Content/themes/OECD/images/up_normal.gif" alt=""><img class="cursor" onclick="javascript:onSort('CG_SENG', -1)" src="Content/themes/OECD/images/down_normal.gif" alt=""></th><th class="HDim" style="border-top:0px"><img class="cursor" onclick="javascript:onSort('CG_VOTO', 1)" src="Content/themes/OECD/images/up_normal.gif" alt=""><img class="cursor" onclick="javascript:onSort('CG_VOTO', -1)" src="Content/themes/OECD/images/down_normal.gif" alt=""></th><th class="HDim" style="border-top:0px"><img class="cursor" onclick="javascript:onSort('HS_LEB', 1)" src="Content/themes/OECD/images/up_normal.gif" alt=""><img class="cursor" onclick="javascript:onSort('HS_LEB', -1)" src="Content/themes/OECD/images/down_normal.gif" alt=""></th><th class="HDim" style="border-top:0px"><img class="cursor" onclick="javascript:onSort('HS_SFRH', 1)" src="Content/themes/OECD/images/up_normal.gif" alt=""><img class="cursor" onclick="javascript:onSort('HS_SFRH', -1)" src="Content/themes/OECD/images/down_normal.gif" alt=""></th><th class="HDim" style="border-top:0px"><img class="cursor" onclick="javascript:onSort('SW_LIFS', 1)" src="Content/themes/OECD/images/up_normal.gif" alt=""><img class="cursor" onclick="javascript:onSort('SW_LIFS', -1)" src="Content/themes/OECD/images/down_normal.gif" alt=""></th><th class="HDim" style="border-top:0px"><img class="cursor" onclick="javascript:onSort('PS_FSAFEN', 1)" src="Content/themes/OECD/images/up_normal.gif" alt=""><img class="cursor" onclick="javascript:onSort('PS_FSAFEN', -1)" src="Content/themes/OECD/images/down_normal.gif" alt=""></th><th class="HDim" style="border-top:0px"><img class="cursor" onclick="javascript:onSort('PS_REPH', 1)" src="Content/themes/OECD/images/up_normal.gif" alt=""><img class="cursor" onclick="javascript:onSort('PS_REPH', -1)" src="Content/themes/OECD/images/down_normal.gif" alt=""></th><th class="HDim" style="border-top:0px"><img class="cursor" onclick="javascript:onSort('WL_EWLH', 1)" src="Content/themes/OECD/images/up_normal.gif" alt=""><img class="cursor" onclick="javascript:onSort('WL_EWLH', -1)" src="Content/themes/OECD/images/down_normal.gif" alt=""></th><th class="HDim" style="border-top:0px"><img class="cursor" onclick="javascript:onSort('WL_TNOW', 1)" src="Content/themes/OECD/images/up_normal.gif" alt=""><img class="cursor" onclick="javascript:onSort('WL_TNOW', -1)" src="Content/themes/OECD/images/down_normal.gif" alt=""></th><tr><tr><th colspan="2" class="VDimName"><b><a class="dimensionSelectMemberButton" href="#" onclick="OpenDialog('./ModalDimWebTree.aspx?DimensionCode=LOCATION', 'Customize');">Country</a></b></th><th class="VDimName"></th><th class="SiblingMD"></th><th class="SiblingMD"></th><th class="SiblingMD"></th><th class="SiblingMD"></th><th class="SiblingMD"></th><th class="SiblingMD"></th><th class="SiblingMD"></th><th class="SiblingMD"></th><th class="SiblingMD"></th><th class="SiblingMD"></th><th class="SiblingMD"></th><th class="SiblingMD"></th><th class="SiblingMD"></th><th class="SiblingMD"></th><th class="SiblingMD"></th><th class="SiblingMD"></th><th class="SiblingMD"></th><th class="SiblingMD"></th><th class="SiblingMD"></th><th class="SiblingMD"></th><th class="SiblingMD"></th><th class="SiblingMD"></th><th class="SiblingMD"></th><th class="SiblingMD"></th></tr></thead><tbody><tr id="row1" class="row1"><td colspan="2" class="RowDimLabel">Australia</td><td class="RowDimLabel"></td><td class="Data">..</td><td class="Data">20</td><td class="Data">..</td><td class="Data">32 759</td><td class="Data">427 064</td><td class="Data">5.4</td><td class="Data">73</td><td class="Data">1.31</td><td class="Data">49 126</td><td class="Data">95</td><td class="Data">81</td><td class="Data">502</td><td class="Data">21</td><td class="Data">5</td><td class="Data">93</td><td class="Data">2.7</td><td class="Data">91</td><td class="Data">82.5</td><td class="Data">85</td><td class="Data">7.3</td><td class="Data">63.5</td><td class="Data">1.1</td><td class="Data">13.04</td><td class="Data">14.35</td></tr><tr id="row2" class="row2"><td colspan="2" class="RowDimLabel2">Austria</td><td class="RowDimLabel2"></td><td class="Data2">0.9</td><td class="Data2">21</td><td class="Data2">1.6</td><td class="Data2">33 541</td><td class="Data2">308 325</td><td class="Data2">3.5</td><td class="Data2">72</td><td class="Data2">1.84</td><td class="Data2">50 349</td><td class="Data2">92</td><td class="Data2">85</td><td class="Data2">492</td><td class="Data2">17</td><td class="Data2">16</td><td class="Data2">92</td><td class="Data2">1.3</td><td class="Data2">80</td><td class="Data2">81.7</td><td class="Data2">70</td><td class="Data2">7.1</td><td class="Data2">80.6</td><td class="Data2">0.5</td><td class="Data2">6.66</td><td class="Data2">14.55</td></tr><tr id="row3" class="row3"><td colspan="2" class="RowDimLabel">Belgium</td><td class="RowDimLabel"></td><td class="Data">1.9</td><td class="Data">21</td><td class="Data">2.2</td><td class="Data">30 364</td><td class="Data">386 006</td><td class="Data">3.7</td><td class="Data">63</td><td class="Data">3.54</td><td class="Data">49 675</td><td class="Data">91</td><td class="Data">77</td><td class="Data">503</td><td class="Data">19.3</td><td class="Data">15</td><td class="Data">84</td><td class="Data">2</td><td class="Data">89</td><td class="Data">81.5</td><td class="Data">74</td><td class="Data">6.9</td><td class="Data">70.1</td><td class="Data">1</td><td class="Data">4.75</td><td class="Data">15.7</td></tr><tr id="row4" class="row4"><td colspan="2" class="RowDimLabel2">Canada</td><td class="RowDimLabel2"></td><td class="Data2">0.2</td><td class="Data2">22</td><td class="Data2">2.6</td><td class="Data2">30 854</td><td class="Data2">423 849</td><td class="Data2">6</td><td class="Data2">73</td><td class="Data2">0.77</td><td class="Data2">47 622</td><td class="Data2">93</td><td class="Data2">91</td><td class="Data2">523</td><td class="Data2">17.3</td><td class="Data2">7</td><td class="Data2">91</td><td class="Data2">2.9</td><td class="Data2">68</td><td class="Data2">81.9</td><td class="Data2">88</td><td class="Data2">7.4</td><td class="Data2">82.2</td><td class="Data2">1.3</td><td class="Data2">3.69</td><td class="Data2">14.56</td></tr><tr id="row5" class="row5"><td colspan="2" class="RowDimLabel">Chile</td><td class="RowDimLabel"></td><td class="Data">9.4</td><td class="Data">18</td><td class="Data">1.2</td><td class="Data">..</td><td class="Data">100 967</td><td class="Data">8.7</td><td class="Data">63</td><td class="Data">..</td><td class="Data">25 879</td><td class="Data">85</td><td class="Data">65</td><td class="Data">443</td><td class="Data">17.5</td><td class="Data">16</td><td class="Data">71</td><td class="Data">1.3</td><td class="Data">47</td><td class="Data">79.9</td><td class="Data">57</td><td class="Data">6.5</td><td class="Data">47.9</td><td class="Data">4.2</td><td class="Data">9.72</td><td class="Data">..</td></tr><tr id="row6" class="row6"><td colspan="2" class="RowDimLabel2">Colombia</td><td class="RowDimLabel2"></td><td class="Data2">23.9</td><td class="Data2">17</td><td class="Data2">1.2</td><td class="Data2">..</td><td class="Data2">..</td><td class="Data2">..</td><td class="Data2">67</td><td class="Data2">0.79</td><td class="Data2">..</td><td class="Data2">89</td><td class="Data2">54</td><td class="Data2">410</td><td class="Data2">14.1</td><td class="Data2">10</td><td class="Data2">75</td><td class="Data2">1.4</td><td class="Data2">53</td><td class="Data2">76.2</td><td class="Data2">..</td><td class="Data2">6.3</td><td class="Data2">44.4</td><td class="Data2">24.5</td><td class="Data2">26.56</td><td class="Data2">..</td></tr><tr id="row7" class="row7"><td colspan="2" class="RowDimLabel">Czech Republic</td><td class="RowDimLabel"></td><td class="Data">0.7</td><td class="Data">24</td><td class="Data">1.4</td><td class="Data">21 453</td><td class="Data">..</td><td class="Data">3.1</td><td class="Data">74</td><td class="Data">1.04</td><td class="Data">25 372</td><td class="Data">91</td><td class="Data">94</td><td class="Data">491</td><td class="Data">17.9</td><td class="Data">20</td><td class="Data">87</td><td class="Data">1.6</td><td class="Data">61</td><td class="Data">79.1</td><td class="Data">60</td><td class="Data">6.7</td><td class="Data">72.3</td><td class="Data">0.5</td><td class="Data">5.65</td><td class="Data">..</td></tr><tr id="row8" class="row8"><td colspan="2" class="RowDimLabel2">Denmark</td><td class="RowDimLabel2"></td><td class="Data2">0.5</td><td class="Data2">23</td><td class="Data2">1.9</td><td class="Data2">29 606</td><td class="Data2">118 637</td><td class="Data2">4.2</td><td class="Data2">74</td><td class="Data2">1.31</td><td class="Data2">51 466</td><td class="Data2">95</td><td class="Data2">81</td><td class="Data2">504</td><td class="Data2">19.5</td><td class="Data2">9</td><td class="Data2">95</td><td class="Data2">2</td><td class="Data2">86</td><td class="Data2">80.9</td><td class="Data2">71</td><td class="Data2">7.6</td><td class="Data2">83.5</td><td class="Data2">0.6</td><td class="Data2">2.34</td><td class="Data2">15.87</td></tr><tr id="row9" class="row9"><td colspan="2" class="RowDimLabel">Estonia</td><td class="RowDimLabel"></td><td class="Data">7</td><td class="Data">17</td><td class="Data">1.6</td><td class="Data">19 697</td><td class="Data">159 373</td><td class="Data">3.8</td><td class="Data">74</td><td class="Data">1.92</td><td class="Data">24 336</td><td class="Data">92</td><td class="Data">89</td><td class="Data">524</td><td class="Data">17.7</td><td class="Data">8</td><td class="Data">84</td><td class="Data">2.7</td><td class="Data">64</td><td class="Data">77.8</td><td class="Data">53</td><td class="Data">5.7</td><td class="Data">69</td><td class="Data">3.1</td><td class="Data">2.42</td><td class="Data">14.9</td></tr><tr id="row10" class="row10"><td colspan="2" class="RowDimLabel2">Finland</td><td class="RowDimLabel2"></td><td class="Data2">0.5</td><td class="Data2">23</td><td class="Data2">1.9</td><td class="Data2">29 943</td><td class="Data2">200 827</td><td class="Data2">3.9</td><td class="Data2">70</td><td class="Data2">2.13</td><td class="Data2">42 964</td><td class="Data2">95</td><td class="Data2">88</td><td class="Data2">523</td><td class="Data2">19.8</td><td class="Data2">6</td><td class="Data2">95</td><td class="Data2">2.2</td><td class="Data2">67</td><td class="Data2">81.5</td><td class="Data2">70</td><td class="Data2">7.6</td><td class="Data2">85.1</td><td class="Data2">1.3</td><td class="Data2">3.81</td><td class="Data2">15.17</td></tr><tr id="row11" class="row11"><td colspan="2" class="RowDimLabel">France</td><td class="RowDimLabel"></td><td class="Data">0.5</td><td class="Data">21</td><td class="Data">1.8</td><td class="Data">31 304</td><td class="Data">280 653</td><td class="Data">7.6</td><td class="Data">65</td><td class="Data">4</td><td class="Data">43 755</td><td class="Data">90</td><td class="Data">78</td><td class="Data">496</td><td class="Data">16.5</td><td class="Data">13</td><td class="Data">81</td><td class="Data">2.1</td><td class="Data">75</td><td class="Data">82.4</td><td class="Data">66</td><td class="Data">6.5</td><td class="Data">70.5</td><td class="Data">0.5</td><td class="Data">7.67</td><td class="Data">16.36</td></tr><tr id="row12" class="row12"><td colspan="2" class="RowDimLabel2">Germany<img class="cursor metadataLink" onclick="javascript:ShowMetadata('BLI','[LOCATION].[DEU]', true);" alt="Information on item" src="/Content/themes/OECD/images/information.gif" /></td><td class="RowDimLabel2"></td><td class="Data2">0.2</td><td class="Data2">20</td><td class="Data2">1.8</td><td class="Data2">34 294</td><td class="Data2">259 667</td><td class="Data2">2.7</td><td class="Data2">75</td><td class="Data2">1.57</td><td class="Data2">47 585</td><td class="Data2">90</td><td class="Data2">87</td><td class="Data2">508</td><td class="Data2">18.1</td><td class="Data2">14</td><td class="Data2">91</td><td class="Data2">1.8</td><td class="Data2">76</td><td class="Data2">81.1</td><td class="Data2">65</td><td class="Data2">7</td><td class="Data2">72.5</td><td class="Data2">0.5</td><td class="Data2">4.26</td><td class="Data2">15.62</td></tr><tr id="row13" class="row13"><td colspan="2" class="RowDimLabel">Greece</td><td class="RowDimLabel"></td><td class="Data">0.5</td><td class="Data">23</td><td class="Data">1.2</td><td class="Data">17 700</td><td class="Data">150 134</td><td class="Data">29.8</td><td class="Data">53</td><td class="Data">15.65</td><td class="Data">26 064</td><td class="Data">80</td><td class="Data">73</td><td class="Data">458</td><td class="Data">19</td><td class="Data">18</td><td class="Data">69</td><td class="Data">1.8</td><td class="Data">64</td><td class="Data">81.5</td><td class="Data">74</td><td class="Data">5.4</td><td class="Data">60</td><td class="Data">0.8</td><td class="Data">6.42</td><td class="Data">..</td></tr><tr id="row14" class="row14"><td colspan="2" class="RowDimLabel2">Hungary</td><td class="RowDimLabel2"></td><td class="Data2">4.7</td><td class="Data2">19</td><td class="Data2">1.2</td><td class="Data2">..</td><td class="Data2">104 458</td><td class="Data2">4.7</td><td class="Data2">68</td><td class="Data2">1.72</td><td class="Data2">22 576</td><td class="Data2">86</td><td class="Data2">84</td><td class="Data2">474</td><td class="Data2">16.4</td><td class="Data2">19</td><td class="Data2">77</td><td class="Data2">1.2</td><td class="Data2">70</td><td class="Data2">76.2</td><td class="Data2">60</td><td class="Data2">5.6</td><td class="Data2">56.3</td><td class="Data2">1</td><td class="Data2">3.03</td><td class="Data2">..</td></tr><tr id="row15" class="row15"><td colspan="2" class="RowDimLabel">Iceland</td><td class="RowDimLabel"></td><td class="Data">0</td><td class="Data">24</td><td class="Data">1.6</td><td class="Data">..</td><td class="Data">..</td><td class="Data">0.7</td><td class="Data">86</td><td class="Data">0.26</td><td class="Data">61 787</td><td class="Data">98</td><td class="Data">77</td><td class="Data">481</td><td class="Data">19</td><td class="Data">3</td><td class="Data">99</td><td class="Data">2.1</td><td class="Data">79</td><td class="Data">82.3</td><td class="Data">76</td><td class="Data">7.5</td><td class="Data">86</td><td class="Data">0.5</td><td class="Data">15.06</td><td class="Data">..</td></tr><tr id="row16" class="row16"><td colspan="2" class="RowDimLabel2">Ireland</td><td class="RowDimLabel2"></td><td class="Data2">1</td><td class="Data2">20</td><td class="Data2">2.1</td><td class="Data2">25 310</td><td class="Data2">217 130</td><td class="Data2">7.8</td><td class="Data2">67</td><td class="Data2">3.23</td><td class="Data2">47 653</td><td class="Data2">95</td><td class="Data2">82</td><td class="Data2">509</td><td class="Data2">18.1</td><td class="Data2">7</td><td class="Data2">85</td><td class="Data2">1.3</td><td class="Data2">65</td><td class="Data2">81.8</td><td class="Data2">83</td><td class="Data2">7</td><td class="Data2">75.9</td><td class="Data2">0.7</td><td class="Data2">5.25</td><td class="Data2">..</td></tr><tr id="row17" class="row17"><td colspan="2" class="RowDimLabel">Israel<img class="cursor metadataLink" onclick="javascript:ShowMetadata('BLI','[LOCATION].[ISR]', true);" alt="Information on item" src="/Content/themes/OECD/images/information.gif" /></td><td class="RowDimLabel"></td><td class="Data">..</td><td class="Data">..</td><td class="Data">1.2</td><td class="Data">..</td><td class="Data">..</td><td class="Data">4.2</td><td class="Data">69</td><td class="Data">0.49</td><td class="Data">35 067</td><td class="Data">88</td><td class="Data">87</td><td class="Data">472</td><td class="Data">15.6</td><td class="Data">21</td><td class="Data">67</td><td class="Data">2.5</td><td class="Data">72</td><td class="Data">82.5</td><td class="Data">84</td><td class="Data">7.2</td><td class="Data">69.8</td><td class="Data">1.8</td><td class="Data">15.45</td><td class="Data">..</td></tr><tr id="row18" class="row18"><td colspan="2" class="RowDimLabel2">Italy</td><td class="RowDimLabel2"></td><td class="Data2">0.7</td><td class="Data2">23</td><td class="Data2">1.4</td><td class="Data2">26 588</td><td class="Data2">279 889</td><td class="Data2">12.3</td><td class="Data2">58</td><td class="Data2">6.59</td><td class="Data2">36 658</td><td class="Data2">92</td><td class="Data2">61</td><td class="Data2">485</td><td class="Data2">16.6</td><td class="Data2">18</td><td class="Data2">71</td><td class="Data2">2.5</td><td class="Data2">73</td><td class="Data2">83.3</td><td class="Data2">71</td><td class="Data2">6</td><td class="Data2">58.4</td><td class="Data2">0.6</td><td class="Data2">4.11</td><td class="Data2">16.47</td></tr><tr id="row19" class="row19"><td colspan="2" class="RowDimLabel">Japan</td><td class="RowDimLabel"></td><td class="Data">6.4</td><td class="Data">22</td><td class="Data">1.9</td><td class="Data">29 798</td><td class="Data">305 878</td><td class="Data">1.4</td><td class="Data">75</td><td class="Data">1.03</td><td class="Data">40 863</td><td class="Data">89</td><td class="Data">..</td><td class="Data">529</td><td class="Data">16.4</td><td class="Data">14</td><td class="Data">87</td><td class="Data">1.4</td><td class="Data">53</td><td class="Data">84.1</td><td class="Data">36</td><td class="Data">5.9</td><td class="Data">72.5</td><td class="Data">0.2</td><td class="Data">..</td><td class="Data">..</td></tr><tr id="row20" class="row20"><td colspan="2" class="RowDimLabel2">Korea</td><td class="RowDimLabel2"></td><td class="Data2">2.5</td><td class="Data2">15</td><td class="Data2">1.5</td><td class="Data2">21 882</td><td class="Data2">285 980</td><td class="Data2">2.6</td><td class="Data2">67</td><td class="Data2">0.05</td><td class="Data2">35 191</td><td class="Data2">78</td><td class="Data2">88</td><td class="Data2">519</td><td class="Data2">17.3</td><td class="Data2">28</td><td class="Data2">76</td><td class="Data2">2.9</td><td class="Data2">77</td><td class="Data2">82.4</td><td class="Data2">33</td><td class="Data2">5.9</td><td class="Data2">66.6</td><td class="Data2">1</td><td class="Data2">..</td><td class="Data2">14.7</td></tr><tr id="row21" class="row21"><td colspan="2" class="RowDimLabel">Latvia</td><td class="RowDimLabel"></td><td class="Data">13.9</td><td class="Data">23</td><td class="Data">1.2</td><td class="Data">16 275</td><td class="Data">70 160</td><td class="Data">9.6</td><td class="Data">70</td><td class="Data">3.35</td><td class="Data">23 683</td><td class="Data">86</td><td class="Data">88</td><td class="Data">487</td><td class="Data">18</td><td class="Data">11</td><td class="Data">79</td><td class="Data">2.2</td><td class="Data">59</td><td class="Data">74.7</td><td class="Data">47</td><td class="Data">5.9</td><td class="Data">62.4</td><td class="Data">4.8</td><td class="Data">1.27</td><td class="Data">13.83</td></tr><tr id="row22" class="row22"><td colspan="2" class="RowDimLabel2">Lithuania</td><td class="RowDimLabel2"></td><td class="Data2">13.6</td><td class="Data2">19</td><td class="Data2">1.5</td><td class="Data2">21 660</td><td class="Data2">..</td><td class="Data2">..</td><td class="Data2">70</td><td class="Data2">2.69</td><td class="Data2">24 287</td><td class="Data2">88</td><td class="Data2">93</td><td class="Data2">475</td><td class="Data2">18.4</td><td class="Data2">14</td><td class="Data2">81</td><td class="Data2">2.4</td><td class="Data2">51</td><td class="Data2">74.8</td><td class="Data2">43</td><td class="Data2">5.9</td><td class="Data2">55.9</td><td class="Data2">3.4</td><td class="Data2">0.54</td><td class="Data2">..</td></tr><tr id="row23" class="row23"><td colspan="2" class="RowDimLabel">Luxembourg</td><td class="RowDimLabel"></td><td class="Data">0.5</td><td class="Data">21</td><td class="Data">1.9</td><td class="Data">39 264</td><td class="Data">769 053</td><td class="Data">1.7</td><td class="Data">66</td><td class="Data">2.35</td><td class="Data">63 062</td><td class="Data">93</td><td class="Data">77</td><td class="Data">483</td><td class="Data">15.1</td><td class="Data">12</td><td class="Data">84</td><td class="Data">1.7</td><td class="Data">91</td><td class="Data">82.8</td><td class="Data">69</td><td class="Data">6.9</td><td class="Data">75.8</td><td class="Data">0.6</td><td class="Data">3.82</td><td class="Data">..</td></tr><tr id="row24" class="row24"><td colspan="2" class="RowDimLabel2">Mexico</td><td class="RowDimLabel2"></td><td class="Data2">25.5</td><td class="Data2">20</td><td class="Data2">1</td><td class="Data2">..</td><td class="Data2">..</td><td class="Data2">5.5</td><td class="Data2">61</td><td class="Data2">0.07</td><td class="Data2">15 314</td><td class="Data2">81</td><td class="Data2">38</td><td class="Data2">416</td><td class="Data2">15.2</td><td class="Data2">16</td><td class="Data2">68</td><td class="Data2">3.2</td><td class="Data2">63</td><td class="Data2">75.4</td><td class="Data2">66</td><td class="Data2">6.5</td><td class="Data2">41.8</td><td class="Data2">18.1</td><td class="Data2">28.7</td><td class="Data2">..</td></tr><tr id="row25" class="row25"><td colspan="2" class="RowDimLabel">Netherlands</td><td class="RowDimLabel"></td><td class="Data">0.1</td><td class="Data">19</td><td class="Data">1.9</td><td class="Data">29 333</td><td class="Data">157 824</td><td class="Data">4.8</td><td class="Data">76</td><td class="Data">1.97</td><td class="Data">52 877</td><td class="Data">91</td><td class="Data">78</td><td class="Data">508</td><td class="Data">18.7</td><td class="Data">14</td><td class="Data">93</td><td class="Data">2.6</td><td class="Data">82</td><td class="Data">81.6</td><td class="Data">76</td><td class="Data">7.4</td><td class="Data">82</td><td class="Data">0.6</td><td class="Data">0.42</td><td class="Data">..</td></tr><tr id="row26" class="row26"><td colspan="2" class="RowDimLabel2">New Zealand</td><td class="RowDimLabel2"></td><td class="Data2">..</td><td class="Data2">26</td><td class="Data2">2.4</td><td class="Data2">..</td><td class="Data2">388 514</td><td class="Data2">4.7</td><td class="Data2">77</td><td class="Data2">0.74</td><td class="Data2">40 043</td><td class="Data2">96</td><td class="Data2">79</td><td class="Data2">506</td><td class="Data2">17.7</td><td class="Data2">5</td><td class="Data2">89</td><td class="Data2">2.5</td><td class="Data2">80</td><td class="Data2">81.7</td><td class="Data2">88</td><td class="Data2">7.3</td><td class="Data2">65.7</td><td class="Data2">1.3</td><td class="Data2">15.11</td><td class="Data2">14.87</td></tr><tr id="row27" class="row27"><td colspan="2" class="RowDimLabel">Norway</td><td class="RowDimLabel"></td><td class="Data">0</td><td class="Data">17</td><td class="Data">2.1</td><td class="Data">35 725</td><td class="Data">228 936</td><td class="Data">..</td><td class="Data">74</td><td class="Data">0.66</td><td class="Data">51 212</td><td class="Data">94</td><td class="Data">82</td><td class="Data">504</td><td class="Data">18.3</td><td class="Data">5</td><td class="Data">98</td><td class="Data">2.2</td><td class="Data">78</td><td class="Data">82.5</td><td class="Data">77</td><td class="Data">7.6</td><td class="Data">90.1</td><td class="Data">0.4</td><td class="Data">2.93</td><td class="Data">15.56</td></tr><tr id="row28" class="row28"><td colspan="2" class="RowDimLabel2">Poland</td><td class="RowDimLabel2"></td><td class="Data2">3</td><td class="Data2">22</td><td class="Data2">1.1</td><td class="Data2">19 814</td><td class="Data2">210 991</td><td class="Data2">5.7</td><td class="Data2">66</td><td class="Data2">1.52</td><td class="Data2">27 046</td><td class="Data2">86</td><td class="Data2">92</td><td class="Data2">504</td><td class="Data2">17.6</td><td class="Data2">22</td><td class="Data2">82</td><td class="Data2">2.6</td><td class="Data2">55</td><td class="Data2">78</td><td class="Data2">58</td><td class="Data2">6.1</td><td class="Data2">67.3</td><td class="Data2">0.7</td><td class="Data2">5.95</td><td class="Data2">14.42</td></tr><tr id="row29" class="row29"><td colspan="2" class="RowDimLabel">Portugal</td><td class="RowDimLabel"></td><td class="Data">1</td><td class="Data">21</td><td class="Data">1.7</td><td class="Data">21 203</td><td class="Data">232 666</td><td class="Data">10</td><td class="Data">68</td><td class="Data">4.43</td><td class="Data">25 367</td><td class="Data">88</td><td class="Data">48</td><td class="Data">497</td><td class="Data">16.9</td><td class="Data">10</td><td class="Data">86</td><td class="Data">1.5</td><td class="Data">56</td><td class="Data">81.2</td><td class="Data">48</td><td class="Data">5.4</td><td class="Data">73.4</td><td class="Data">1</td><td class="Data">8.27</td><td class="Data">..</td></tr><tr id="row30" class="row30"><td colspan="2" class="RowDimLabel2">Slovak Republic</td><td class="RowDimLabel2"></td><td class="Data2">1.2</td><td class="Data2">23</td><td class="Data2">1.1</td><td class="Data2">20 474</td><td class="Data2">119 696</td><td class="Data2">9.9</td><td class="Data2">66</td><td class="Data2">4.78</td><td class="Data2">24 328</td><td class="Data2">91</td><td class="Data2">91</td><td class="Data2">463</td><td class="Data2">15.8</td><td class="Data2">21</td><td class="Data2">85</td><td class="Data2">3</td><td class="Data2">60</td><td class="Data2">77.3</td><td class="Data2">66</td><td class="Data2">6.2</td><td class="Data2">63.5</td><td class="Data2">0.8</td><td class="Data2">4.14</td><td class="Data2">..</td></tr><tr id="row31" class="row31"><td colspan="2" class="RowDimLabel">Slovenia</td><td class="RowDimLabel"></td><td class="Data">0.4</td><td class="Data">18</td><td class="Data">1.5</td><td class="Data">20 820</td><td class="Data">203 044</td><td class="Data">5.8</td><td class="Data">69</td><td class="Data">3.17</td><td class="Data">34 933</td><td class="Data">92</td><td class="Data">88</td><td class="Data">509</td><td class="Data">18.3</td><td class="Data">16</td><td class="Data">90</td><td class="Data">2.5</td><td class="Data">53</td><td class="Data">81.3</td><td class="Data">64</td><td class="Data">5.9</td><td class="Data">86.1</td><td class="Data">0.6</td><td class="Data">4.39</td><td class="Data">14.75</td></tr><tr id="row32" class="row32"><td colspan="2" class="RowDimLabel2">Spain</td><td class="RowDimLabel2"></td><td class="Data2">0.1</td><td class="Data2">21</td><td class="Data2">1.9</td><td class="Data2">23 999</td><td class="Data2">373 548</td><td class="Data2">23.1</td><td class="Data2">62</td><td class="Data2">7.66</td><td class="Data2">38 507</td><td class="Data2">93</td><td class="Data2">59</td><td class="Data2">491</td><td class="Data2">17.9</td><td class="Data2">11</td><td class="Data2">72</td><td class="Data2">1.8</td><td class="Data2">70</td><td class="Data2">83.4</td><td class="Data2">72</td><td class="Data2">6.3</td><td class="Data2">82.1</td><td class="Data2">0.6</td><td class="Data2">4.01</td><td class="Data2">15.93</td></tr><tr id="row33" class="row33"><td colspan="2" class="RowDimLabel">Sweden</td><td class="RowDimLabel"></td><td class="Data">0</td><td class="Data">19</td><td class="Data">1.7</td><td class="Data">31 287</td><td class="Data">..</td><td class="Data">3.2</td><td class="Data">77</td><td class="Data">1.12</td><td class="Data">42 393</td><td class="Data">91</td><td class="Data">83</td><td class="Data">496</td><td class="Data">19.3</td><td class="Data">6</td><td class="Data">96</td><td class="Data">2</td><td class="Data">86</td><td class="Data">82.4</td><td class="Data">75</td><td class="Data">7.3</td><td class="Data">75.6</td><td class="Data">0.9</td><td class="Data">1.07</td><td class="Data">15.18</td></tr><tr id="row34" class="row34"><td colspan="2" class="RowDimLabel2">Switzerland</td><td class="RowDimLabel2"></td><td class="Data2">0.1</td><td class="Data2">22</td><td class="Data2">1.9</td><td class="Data2">37 466</td><td class="Data2">..</td><td class="Data2">..</td><td class="Data2">80</td><td class="Data2">1.82</td><td class="Data2">62 283</td><td class="Data2">93</td><td class="Data2">88</td><td class="Data2">506</td><td class="Data2">17.5</td><td class="Data2">15</td><td class="Data2">95</td><td class="Data2">2.3</td><td class="Data2">49</td><td class="Data2">83.7</td><td class="Data2">78</td><td class="Data2">7.5</td><td class="Data2">85.3</td><td class="Data2">0.6</td><td class="Data2">0.37</td><td class="Data2">..</td></tr><tr id="row35" class="row35"><td colspan="2" class="RowDimLabel">Turkey</td><td class="RowDimLabel"></td><td class="Data">8</td><td class="Data">20</td><td class="Data">1</td><td class="Data">..</td><td class="Data">..</td><td class="Data">12.5</td><td class="Data">52</td><td class="Data">2.39</td><td class="Data">..</td><td class="Data">86</td><td class="Data">39</td><td class="Data">425</td><td class="Data">18.3</td><td class="Data">20</td><td class="Data">65</td><td class="Data">1.5</td><td class="Data">86</td><td class="Data">78</td><td class="Data">69</td><td class="Data">5.5</td><td class="Data">59.8</td><td class="Data">1.4</td><td class="Data">32.64</td><td class="Data">14.79</td></tr><tr id="row36" class="row36"><td colspan="2" class="RowDimLabel2">United Kingdom</td><td class="RowDimLabel2"></td><td class="Data2">0.3</td><td class="Data2">26</td><td class="Data2">1.9</td><td class="Data2">28 715</td><td class="Data2">548 392</td><td class="Data2">4.5</td><td class="Data2">75</td><td class="Data2">1.13</td><td class="Data2">43 732</td><td class="Data2">94</td><td class="Data2">81</td><td class="Data2">500</td><td class="Data2">17.5</td><td class="Data2">11</td><td class="Data2">84</td><td class="Data2">3.1</td><td class="Data2">69</td><td class="Data2">81.2</td><td class="Data2">69</td><td class="Data2">6.8</td><td class="Data2">77.7</td><td class="Data2">0.2</td><td class="Data2">12.15</td><td class="Data2">14.92</td></tr><tr id="row37" class="row37"><td colspan="2" class="RowDimLabel">United States</td><td class="RowDimLabel"></td><td class="Data">0.1</td><td class="Data">19</td><td class="Data">2.4</td><td class="Data">45 284</td><td class="Data">632 100</td><td class="Data">7.7</td><td class="Data">70</td><td class="Data">0.66</td><td class="Data">60 558</td><td class="Data">91</td><td class="Data">91</td><td class="Data">488</td><td class="Data">17.2</td><td class="Data">10</td><td class="Data">83</td><td class="Data">3.1</td><td class="Data">65</td><td class="Data">78.6</td><td class="Data">88</td><td class="Data">6.9</td><td class="Data">73.9</td><td class="Data">5.5</td><td class="Data">11.09</td><td class="Data">14.44</td></tr><tr id="row38" class="row38"><td colspan="2" class="RowDimLabel2">OECD - Total</td><td class="RowDimLabel2"></td><td class="Data2">4.4</td><td class="Data2">20</td><td class="Data2">1.8</td><td class="Data2">33 604</td><td class="Data2">408 376</td><td class="Data2">7</td><td class="Data2">68</td><td class="Data2">1.78</td><td class="Data2">43 241</td><td class="Data2">89</td><td class="Data2">78</td><td class="Data2">486</td><td class="Data2">17.2</td><td class="Data2">14</td><td class="Data2">81</td><td class="Data2">2.4</td><td class="Data2">68</td><td class="Data2">80.2</td><td class="Data2">69</td><td class="Data2">6.5</td><td class="Data2">68.4</td><td class="Data2">3.7</td><td class="Data2">11.01</td><td class="Data2">14.98</td></tr><tr id="row39" class="row39"><td rowspan="3" class="RowDimLabel" class="RowDimLabel">Non-OECD Economies</td><td class="RowDimLabel">Brazil</td><td class="RowDimLabel"></td><td class="Data">6.7</td><td class="Data">..</td><td class="Data">..</td><td class="Data">..</td><td class="Data">..</td><td class="Data">..</td><td class="Data">61</td><td class="Data">..</td><td class="Data">..</td><td class="Data">90</td><td class="Data">49</td><td class="Data">395</td><td class="Data">16.2</td><td class="Data">10</td><td class="Data">73</td><td class="Data">2.2</td><td class="Data">79</td><td class="Data">74.8</td><td class="Data">..</td><td class="Data">6.4</td><td class="Data">35.6</td><td class="Data">26.7</td><td class="Data">7.13</td><td class="Data">..</td></tr><tr id="row40" class="row40"><td class="RowDimLabel2">Russia</td><td class="RowDimLabel2"></td><td class="Data2">14.8</td><td class="Data2">18</td><td class="Data2">0.9</td><td class="Data2">..</td><td class="Data2">..</td><td class="Data2">..</td><td class="Data2">70</td><td class="Data2">1.59</td><td class="Data2">..</td><td class="Data2">89</td><td class="Data2">94</td><td class="Data2">492</td><td class="Data2">16.2</td><td class="Data2">15</td><td class="Data2">55</td><td class="Data2">..</td><td class="Data2">68</td><td class="Data2">71.8</td><td class="Data2">43</td><td class="Data2">5.8</td><td class="Data2">52.8</td><td class="Data2">9.6</td><td class="Data2">0.14</td><td class="Data2">..</td></tr><tr id="row41" class="row41"><td class="RowDimLabel">South Africa</td><td class="RowDimLabel"></td><td class="Data">37</td><td class="Data">18</td><td class="Data">..</td><td class="Data">..</td><td class="Data">..</td><td class="Data">..</td><td class="Data">43</td><td class="Data">16.46</td><td class="Data">..</td><td class="Data">88</td><td class="Data">73</td><td class="Data">..</td><td class="Data">..</td><td class="Data">22</td><td class="Data">67</td><td class="Data">..</td><td class="Data">73</td><td class="Data">57.5</td><td class="Data">..</td><td class="Data">4.7</td><td class="Data">36.1</td><td class="Data">13.7</td><td class="Data">18.12</td><td class="Data">14.92</td></tr></tbody></table></div></div><div id="divFlag"></div><div id="divQueryInformation"><table class="HeaderTable" id="HeaderTable"><tbody><tr><td class="PowerExpression" style="vertical-align:middle;">Data extracted on 20 Mar 2021 11:54 UTC (GMT) from <a href="/WBOS/index.aspx" target="_blank" rel="noopener noreferrer">OECD.Stat</a></td><td class="PowerExpression" style="vertical-align:middle;"> <div id="divfreezetable"></div></td></tr></tbody></table></div></div>
+    <script type="text/javascript" language="javascript">
+        if (typeof centerwidth != "undefined" && typeof middleheight != "undefined") {
+            setupTableLayout();
+        }
+    </script>
+    
+    <div style="display: none">
+        
+    </div>
+    <script type="text/javascript" language="javascript">
+        var treeviewdatasetcode = "";
+        var treeviewqueryid = 0;
+        $(function(){
+
+            
+    
+             showMetadata('BLI'); $('#divmetadata').delay(2000).hide("fast", function() { $("#toggler-east").removeClass("toggler-east-open").addClass("toggler-east-closed");centerwidth = 0;middleheight = 0; setupLayout(); if (!($.browser.msie)) {freezeTable();} });
+
+            self.scrollTo(0,0);
+            try
+            {
+                
+            }
+            catch(ex)
+            {
+                alert( "Error in Merged Queries:" + ex.message );
+            }
+	
+            var treeviewlink;
+
+            treeviewdatasetcode = 'BLI';treeviewqueryid = 86595;
+
+            treeviewlink = $("#browsethemes a[qid= '" + treeviewqueryid +"' ]");
+
+            if (treeviewqueryid && !treeviewlink.hasClass("ds"))
+            {
+                if (!treeviewlink.hasClass("qclicked"))
+                { 
+                    $("#browsethemes .qclicked").removeClass("qclicked");
+                    treeviewlink.addClass("qclicked");
+                    //        if (typeof ishotlink != 'undefined') {
+                    //            if (ishotlink == true) { $("#browsePanel").tabs('select', 0); }
+                    //        }
+                    treeviewlink.parents("li.t").removeClass("closed").addClass("opened").children("ul").show();
+                }
+            }
+            else if (treeviewdatasetcode)
+            {
+                treeviewlink = $("#browsethemes a[dscode= '" + treeviewdatasetcode +"' ]").first();
+                if (!treeviewlink.hasClass("dsclicked") || !treeviewlink.hasClass("pdsclicked"))
+                { 
+                    $("#browsethemes .dsclicked").removeClass("dsclicked");
+                    $("#browsethemes .pdsclicked").removeClass("pdsclicked");
+                    if (treeviewlink.hasClass("pds"))
+                    { 
+                        treeviewlink.addClass("pdsclicked");
+                    }
+                    else
+                    {
+                        treeviewlink.addClass("dsclicked");
+                    }
+                    treeviewlink.parents("li.t").removeClass("closed").addClass("opened").children("ul").show();
+                }
+            }
+	
+            displayLogo('');$("#divcontent").css("overflow", "none");;
+        });
+    </script>
+    
+    
+    
+    <script type="text/javascript" language="javascript">
+        ga('send', 'pageview', "/Dataset/BLI/Public/86595");
+    </script>
+</div>
+
+        </div>        
+        <div id="contentLoading" class="left" style="position: relative;display: none">
+            <br />
+            <br />
+            <br />
+            <table style="width: 100%; height: 100%;" cellspacing="0" cellpadding="0" border="0">
+                <tr>
+                    <td align="center" valign="top">
+                        <table cellspacing="0" cellpadding="0" border="0">
+                            <tr>
+                                <td>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Loading...
+                                </td>
+                                <td>
+                                    <img src="../images/FV/spinner.gif" alt="Loading" style="width: 16; height: 16;" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="toggler-east" class="left toggler toggler-east-closed" style="background-image: url(content/Themes/OECD/images/togglers.png)">
+            <img alt="" src="img/transparent.gif" width="18px" height="250px" /></div>
+        <div id="divmetadata" class="left">
+            <h4>
+                <span id="_ctl0__ctl0_cphCentre_ContentPlaceHolder1_lblMetadata">Information</span></h4>
+            <div id="divmetadatacontent">
+                <span id="_ctl0__ctl0_cphCentre_ContentPlaceHolder1_Label1">Please check the i to get information</span></div>
+        </div>
+    </div>
+    
+    <div id="dialog-modal">
+        <div id="dialog-loading">
+        </div>
+        <div id="dialog-content">
+        </div>
+    </div>
+    <div id="dialog2-modal">
+        <div id="dialog2-loading">
+        </div>
+        <div id="dialog2-content">
+        </div>
+    </div>
+    <script language="text/javascript" type="text/javascript">
+        var isbrandedview = false;
+    </script>
+    
+    
+    <script type="text/javascript">
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    </script>
+    <script type="text/javascript">
+        ga('create', 'UA-4129074-1');
+        
+                ga('set', 'dimension1', 'EXTRAOECD');
+                
+        var page = '/Dataset/BLI/Public/86595';
+        ga('send', 'pageview', page);
+
+    </script>
+    
+    
+
+            </div>
+            <div id="_ctl0__ctl0_DivFooter">
+                <div id="footer">
+                    <div class="left">
+                        Powered by .Stat technology | © OECD. 
+                        All rights reserved.
+                        <a href="http://www.oecd.org/termsandconditions/" id="_ctl0__ctl0_oHRefConditions" class="header_navigation" target="_blank" rel="noopener noreferrer">
+                            Terms &amp; Conditions&nbsp;|&nbsp;
+                        </a>
+                        <a href="http://www.oecd.org/document/0,3343,en_2649_201185_1899048_1_1_1_1,00.html" id="_ctl0__ctl0_oHRefPrivacy" class="header_navigation" target="_blank" rel="noopener noreferrer">
+                            Privacy Policy
+                        </a>
+                    </div>
+                    
+    <div class="right">
+		<a href="javascript:login();" id="_ctl0__ctl0_cphFooter_LoginBottomLink" title="">Click here to Login | </a>
+		<a id="_ctl0__ctl0_cphFooter_ContactBottomLink" title="Contact us" onclick="javascript:OpenDialog(&#39;FAQAndContact.aspx?&#39;, &#39;Contact us&#39;);">
+			Contact us&nbsp;|&nbsp;
+		</a>
+		<a id="_ctl0__ctl0_cphFooter_SiteMapBottomLink" onclick="openSiteMap();" title="Site Map">
+			Site Map&nbsp;|&nbsp;
+		</a>
+		<a href="/Content/themes/OECD/static/help/WBOS User Guide (EN).PDF" id="_ctl0__ctl0_cphFooter_UserGuideBottomLink" target="_blank" rel="noopener noreferrer" title="User Guide">
+			User Guide&nbsp;|&nbsp;
+		</a>
+		<a id="_ctl0__ctl0_cphFooter_HomeBottomLink" onclick="openHome();" title="Home">
+			Home
+		</a>
+	</div>
+
+                </div>
+            </div>
+        </div>
+    </form>
+    <script src="js/metadata.js" type="text/javascript"></script>
+    <script src="js/default.js?v2" type="text/javascript"></script>
+    <script src="js/ajax.js" type="text/javascript"></script>
+    <script src="js/mergequeries.js?v2" type="text/javascript"></script>
+    <script src="js/dialog.js?v2" type="text/javascript"></script>
+    <script src="js/webcomponents/build.js" type="text/javascript"></script>
+    
+</body>
+</html>
